@@ -1,0 +1,8 @@
+import 'package:flutter/material.dart';import '../widgets/ui.dart';
+class ChatScreen extends StatefulWidget {const ChatScreen({super.key});@override State<ChatScreen> createState()=>_ChatScreenState();}
+class _ChatScreenState extends State<ChatScreen> {
+ final input=TextEditingController();final messages=<({bool me,String text})>[(me:false,text:'Hello 💜 I am Liya, a demo companion. How are you feeling today?')];
+ @override void dispose(){input.dispose();super.dispose();}
+ void send(){final value=input.text.trim();if(value.isEmpty)return;setState((){messages.add((me:true,text:value));messages.add((me:false,text:'Thank you for sharing. Your feelings matter. If you need support, consider speaking with someone you trust or a healthcare professional. This is a scripted demo, not a clinical chatbot.'));});input.clear();}
+ @override Widget build(BuildContext context)=>Scaffold(appBar:AppBar(title:const Text('Liya • Demo chat')),body:SafeArea(child:Column(children:[Expanded(child:ListView(padding:const EdgeInsets.all(18),children:messages.map((m)=>Align(alignment:m.me?Alignment.centerRight:Alignment.centerLeft,child:Container(margin:const EdgeInsets.symmetric(vertical:6),padding:const EdgeInsets.all(14),constraints:const BoxConstraints(maxWidth:310),decoration:BoxDecoration(color:m.me?const Color(0xFFE5D9F5):Colors.white,borderRadius:BorderRadius.circular(18)),child:Text(m.text)))).toList())),Padding(padding:const EdgeInsets.all(12),child:Row(children:[Expanded(child:TextField(controller:input,onSubmitted:(_)=>send(),decoration:const InputDecoration(hintText:'Type a message...'))),IconButton(onPressed:send,icon:const Icon(Icons.send))]))])));
+}
