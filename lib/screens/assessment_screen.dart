@@ -1,18 +1,136 @@
 import 'package:flutter/material.dart';
+
 import '../data/assessment_questions.dart';
 import '../state/app_state.dart';
+import '../theme/liyaa_theme.dart';
 import '../widgets/ui.dart';
 import 'result_screen.dart';
-class AssessmentScreen extends StatefulWidget {const AssessmentScreen({super.key}); @override State<AssessmentScreen> createState()=>_AssessmentScreenState();}
+
+class AssessmentScreen extends StatefulWidget {
+  const AssessmentScreen({super.key});
+
+  @override
+  State<AssessmentScreen> createState() => _AssessmentScreenState();
+}
+
 class _AssessmentScreenState extends State<AssessmentScreen> {
- int index=0; final List<int?> selected=List.filled(10,null);
- @override Widget build(BuildContext context) { final q=questions[index]; return Scaffold(appBar: AppBar(title: const Text('Your first check-in')), body: PageBody(children: [
- LinearProgressIndicator(value:(index+1)/10, minHeight: 8, borderRadius: BorderRadius.circular(12)),
- Text('Question ${index+1} of 10 • Thinking about the past 7 days'),
- ScreenTitle(q.text),
- ...List.generate(4,(i)=>SoftCard(child: RadioListTile<int>(contentPadding: EdgeInsets.zero, title: Text(q.options[i]), value:i, groupValue:selected[index], onChanged:(v)=>setState(()=>selected[index]=v)))),
- if(index==9) const Text('If you are having thoughts of self-harm, please contact a healthcare professional or local emergency services now. Do not wait for this screening result.', style: TextStyle(color: Color(0xFF9A364C))),
- Row(children:[if(index>0) Expanded(child: OutlinedButton(onPressed:()=>setState(()=>index--), child:const Text('Back'))), if(index>0) const SizedBox(width:12), Expanded(child:FilledButton(onPressed:selected[index]==null?null:(){if(index<9){setState(()=>index++);}else{AppScope.of(context).submitAssessment(selected.cast<int>());Navigator.pushReplacement(context,MaterialPageRoute(builder:(_)=>const ResultScreen()));}}, child:Text(index==9?'See my result':'Next')))]),
- const Text('This is a screening demonstration, not a diagnosis.', textAlign:TextAlign.center),
- ])); }
+  int index = 0;
+  final List<int?> selected = List.filled(10, null);
+
+  void _next() {
+    if (index < 9) {
+      setState(() => index++);
+    } else {
+      AppScope.of(context).submitAssessment(selected.cast<int>());
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const ResultScreen()),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final q = questions[index];
+
+    return LiyaaScaffold(
+      appBar: const LiyaaAppBar('Your first check-in'),
+      body: PageBody(
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: LinearProgressIndicator(
+                  value: (index + 1) / 10,
+                  minHeight: 8,
+                  backgroundColor: LiyaaColors.plum,
+                  valueColor: const AlwaysStoppedAnimation(LiyaaColors.pink),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'Question ${index + 1} of 10  •  the past 7 days',
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: LiyaaColors.inkSoft,
+                ),
+              ),
+            ],
+          ),
+          AnimatedSwitcher(
+            duration: const Duration(milliseconds: 280),
+            child: Column(
+              key: ValueKey(index),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ScreenTitle(q.text, size: 23),
+                const SizedBox(height: 22),
+                for (var i = 0; i < 4; i++) ...[
+                  OptionCard(
+                    text: q.options[i],
+                    selected: selected[index] == i,
+                    onTap: () => setState(() => selected[index] = i),
+                  ),
+                  if (i < 3) const SizedBox(height: 12),
+                ],
+              ],
+            ),
+          ),
+          if (index == 9)
+            const SoftCard(
+              color: LiyaaColors.alert,
+              padding: EdgeInsets.all(16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Icons.favorite_rounded,
+                      size: 20, color: LiyaaColors.alertText),
+                  SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      'If you are having thoughts of self-harm, please contact a '
+                      'healthcare professional or local emergency services now. '
+                      'Do not wait for this screening result.',
+                      style: TextStyle(
+                        fontSize: 14,
+                        height: 1.5,
+                        fontWeight: FontWeight.w500,
+                        color: LiyaaColors.alertText,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          Row(
+            children: [
+              if (index > 0) ...[
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () => setState(() => index--),
+                    child: const Text('Back'),
+                  ),
+                ),
+                const SizedBox(width: 12),
+              ],
+              Expanded(
+                flex: 2,
+                child: FilledButton(
+                  onPressed: selected[index] == null ? null : _next,
+                  child: Text(index == 9 ? 'See my result' : 'Next'),
+                ),
+              ),
+            ],
+          ),
+          const Text(
+            'This is a screening demonstration, not a diagnosis.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 12, color: LiyaaColors.inkSoft),
+          ),
+        ],
+      ),
+    );
+  }
 }
