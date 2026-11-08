@@ -1,0 +1,19 @@
+{
+    "target_column": "Feeling anxious",
+    "target_mapping": {
+        "no": 0,
+        "yes": 1
+    },
+    "feature_columns": [
+        "Age",
+        "Feeling sad or Tearful",
+        "Irritable towards baby & partner",
+        "Trouble sleeping at night",
+        "Problems concentrating or making decision",
+        "Overeating or loss of appetite",
+        "Feeling of guilt",
+        "Problems of bonding with baby",
+        "Suicide attempt"
+    ],
+    "warning": "Feeling anxious is a symptom proxy, not a validated PPD diagnosis."
+}

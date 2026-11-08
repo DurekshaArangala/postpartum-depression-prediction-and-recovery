@@ -1,0 +1,6 @@
+Model,Best CV PR-AUC,Best Parameters
+Random Forest,0.9985831058821397,"{""classifier__n_estimators"": 300, ""classifier__min_samples_split"": 2, ""classifier__min_samples_leaf"": 1, ""classifier__max_depth"": 20}"
+SVM,0.9938715675181775,"{""classifier__kernel"": ""rbf"", ""classifier__gamma"": ""scale"", ""classifier__C"": 10}"
+LightGBM,0.9920972297116949,"{""classifier__num_leaves"": 31, ""classifier__n_estimators"": 200, ""classifier__max_depth"": 5, ""classifier__learning_rate"": 0.1}"
+XGBoost,0.9910961027592575,"{""classifier__subsample"": 1.0, ""classifier__n_estimators"": 200, ""classifier__max_depth"": 5, ""classifier__learning_rate"": 0.03}"
+Logistic Regression,0.9498032917312542,"{""classifier__solver"": ""liblinear"", ""classifier__C"": 0.1}"

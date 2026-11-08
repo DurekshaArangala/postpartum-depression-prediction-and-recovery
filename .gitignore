@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+
+# Model and temporary files (adjust if needed)
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
