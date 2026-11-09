@@ -34,16 +34,19 @@ class _CheckInScreenState extends State<CheckInScreen> {
       note.clear();
     });
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Today’s check-in saved for this demo 💜')),
+      const SnackBar(content: Text('Today’s check-in saved for this demo.')),
     );
   }
 
   Widget _section(String title, Widget child) {
-    return SoftCard(
+    return TintCard(
+      color: LiyaaColors.blush,
+      bordered: true,
+      padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Eyebrow(title),
+          SectionTitle(title),
           const SizedBox(height: 16),
           child,
         ],
@@ -53,8 +56,8 @@ class _CheckInScreenState extends State<CheckInScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Daily check-in'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Daily check-in')),
       body: PageBody(
         children: [
           const ScreenTitle(
@@ -91,13 +94,15 @@ class _CheckInScreenState extends State<CheckInScreen> {
               alignLabelWithHint: true,
             ),
           ),
-          PillAction(label: 'Save today’s check-in', onTap: _save),
+          FilledButton(
+            onPressed: _save,
+            child: const Text('Save today’s check-in'),
+          ),
           const Text(
             'Your check-ins are self-reported wellness notes, not medical measurements.',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, color: LiyaaColors.inkSoft),
+            style: TextStyle(fontSize: 14, color: LiyaaColors.plumSoft),
           ),
-          const SizedBox(height: 8),
         ],
       ),
     );

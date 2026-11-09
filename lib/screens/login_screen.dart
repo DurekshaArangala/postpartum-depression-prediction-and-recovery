@@ -38,14 +38,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Log in'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Log in')),
       body: PageBody(
         children: [
-          const FadeIn(child: LiyaaImage('mom_baby_right.jpg', height: 240)),
+          const ArtCard(
+            'ill_login.png',
+            height: 230,
+            color: LiyaaColors.lavenderSoft,
+          ),
           const ScreenTitle(
-            'Welcome back.\nLog in to continue.',
-            subtitle: 'It is good to see you.',
+            'Welcome back',
+            subtitle: 'It is good to see you again.',
           ),
           TextField(
             controller: name,
@@ -59,9 +63,9 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           const Text(
             'No password is needed in this frontend-only prototype.',
-            style: TextStyle(fontSize: 13, color: LiyaaColors.inkSoft),
+            style: TextStyle(fontSize: 15, color: LiyaaColors.plumSoft),
           ),
-          PillAction(label: 'Continue', onTap: _continue),
+          FilledButton(onPressed: _continue, child: const Text('Continue')),
         ],
       ),
     );

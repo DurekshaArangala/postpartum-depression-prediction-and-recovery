@@ -20,48 +20,52 @@ class ProgressScreen extends StatelessWidget {
         ? 0.0
         : recent.map((c) => c.mood).reduce((a, b) => a + b) / recent.length;
 
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Your progress'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Your progress')),
       body: PageBody(
         children: [
-          const ScreenTitle(
-            'One day at a time.',
-            subtitle: 'Small steps still count. 🌿',
+          const ArtCard(
+            'ill_progress.png',
+            height: 190,
+            color: LiyaaColors.tealSoft,
           ),
-          const LiyaaImage('pregnant_front.jpg', height: 190),
+          const ScreenTitle(
+            'One day at a time',
+            subtitle: 'Small steps still count.',
+          ),
           if (all.isEmpty)
-            const SoftCard(
+            const TintCard(
+              color: LiyaaColors.blush,
+              bordered: true,
               child: Text(
                 'Your daily check-ins will appear here. Start by recording how you feel today.',
-                style: TextStyle(
-                  fontSize: 15,
-                  height: 1.5,
-                  color: LiyaaColors.inkSoft,
-                ),
+                style: TextStyle(fontSize: 17, height: 1.4),
               ),
             )
           else ...[
-            SoftCard(
+            TintCard(
+              color: LiyaaColors.pinkSoft,
+              padding: const EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Eyebrow('Your mood this week'),
+                      const SectionTitle('Your mood this week'),
                       Text(
                         '${average.toStringAsFixed(1)} / 5',
                         style: const TextStyle(
-                          fontSize: 15,
+                          fontSize: 18,
                           fontWeight: FontWeight.w800,
-                          color: LiyaaColors.pinkSoft,
+                          color: LiyaaColors.pink,
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 22),
+                  const SizedBox(height: 20),
                   SizedBox(
-                    height: 130,
+                    height: 140,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -78,23 +82,22 @@ class ProgressScreen extends StatelessWidget {
               ),
             ),
             for (final c in newestFirst)
-              SoftCard(
+              TintCard(
+                color: Colors.white,
+                bordered: true,
                 padding: const EdgeInsets.all(16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: 52,
-                      height: 52,
+                      width: 54,
+                      height: 54,
                       alignment: Alignment.center,
-                      decoration: const BoxDecoration(
-                        gradient: LiyaaColors.pinkGradient,
-                        shape: BoxShape.circle,
+                      decoration: BoxDecoration(
+                        color: LiyaaColors.pinkSoft,
+                        borderRadius: BorderRadius.circular(18),
                       ),
-                      child: Text(
-                        moodEmoji(c.mood),
-                        style: const TextStyle(fontSize: 26),
-                      ),
+                      child: MoodFace(c.mood, size: 32),
                     ),
                     const SizedBox(width: 14),
                     Expanded(
@@ -104,28 +107,23 @@ class ProgressScreen extends StatelessWidget {
                           Text(
                             '${c.date.day}/${c.date.month}/${c.date.year}',
                             style: const TextStyle(
-                              fontSize: 15,
+                              fontSize: 18,
                               fontWeight: FontWeight.w700,
-                              color: LiyaaColors.ink,
                             ),
                           ),
                           const SizedBox(height: 4),
                           Text(
                             'Mood ${c.mood}/5  •  Sleep ${c.sleep}/5  •  Energy ${c.energy}/5',
                             style: const TextStyle(
-                              fontSize: 13,
-                              color: LiyaaColors.inkSoft,
+                              fontSize: 15,
+                              color: LiyaaColors.plumSoft,
                             ),
                           ),
                           if (c.note.isNotEmpty) ...[
                             const SizedBox(height: 8),
                             Text(
                               c.note,
-                              style: const TextStyle(
-                                fontSize: 14,
-                                height: 1.45,
-                                color: LiyaaColors.ink,
-                              ),
+                              style: const TextStyle(fontSize: 16, height: 1.35),
                             ),
                           ],
                         ],
@@ -138,9 +136,8 @@ class ProgressScreen extends StatelessWidget {
           const Text(
             'These are self-reported wellness check-ins, not medical recovery measurements.',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, height: 1.5, color: LiyaaColors.inkSoft),
+            style: TextStyle(fontSize: 13, height: 1.4, color: LiyaaColors.plumSoft),
           ),
-          const SizedBox(height: 8),
         ],
       ),
     );
@@ -155,28 +152,28 @@ class _MoodBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final barHeight = 14 + (mood / 5) * 62;
+    final barHeight = 14 + (mood / 5) * 60;
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Text(moodEmoji(mood), style: const TextStyle(fontSize: 16)),
+        MoodFace(mood, size: 22),
         const SizedBox(height: 6),
         Container(
-          width: 20,
+          width: 22,
           height: barHeight,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             gradient: const LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [LiyaaColors.pinkSoft, LiyaaColors.pink],
+              colors: [LiyaaColors.pink, LiyaaColors.lavender],
             ),
           ),
         ),
         const SizedBox(height: 6),
         Text(
           label,
-          style: const TextStyle(fontSize: 12, color: LiyaaColors.inkSoft),
+          style: const TextStyle(fontSize: 14, color: LiyaaColors.plumSoft),
         ),
       ],
     );

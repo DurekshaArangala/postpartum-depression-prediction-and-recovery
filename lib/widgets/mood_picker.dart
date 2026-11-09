@@ -1,16 +1,53 @@
+
 import 'package:flutter/material.dart';
 
 import '../theme/liyaa_theme.dart';
+import 'ui.dart';
 
-const List<String> moodEmojis = ['😢', '😔', '😐', '🙂', '😊'];
-const List<String> moodLabels = ['Very low', 'Low', 'Okay', 'Good', 'Great'];
+const List<String> moodLabels = [
+  'Very low',
+  'Low',
+  'Okay',
+  'Good',
+  'Great',
+];
 
-String moodEmoji(int mood) => moodEmojis[(mood.clamp(1, 5)) - 1];
+const List<IconData> _moodFallbacks = [
+  Icons.sentiment_very_dissatisfied_rounded,
+  Icons.sentiment_dissatisfied_rounded,
+  Icons.sentiment_neutral_rounded,
+  Icons.sentiment_satisfied_rounded,
+  Icons.sentiment_very_satisfied_rounded,
+];
+
+/// Mood face from assets/icons/mood_1.png … mood_5.png.
+class MoodFace extends StatelessWidget {
+  const MoodFace(this.mood, {super.key, this.size = 32});
+
+  final int mood;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    final m = mood.clamp(1, 5).toInt();
+
+    return LiyaaGlyph(
+      'mood_$m.png',
+      fallback: _moodFallbacks[m - 1],
+      size: size,
+      color: LiyaaColors.pink,
+    );
+  }
+}
 
 class MoodPicker extends StatelessWidget {
-  const MoodPicker({super.key, required this.value, required this.onChanged});
+  const MoodPicker({
+    super.key,
+    required this.value,
+    required this.onChanged,
+  });
 
-  final int value; // 1..5
+  final int value;
   final ValueChanged<int> onChanged;
 
   @override
@@ -21,6 +58,7 @@ class MoodPicker extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(5, (i) {
             final selected = value == i + 1;
+
             return Semantics(
               button: true,
               selected: selected,
@@ -28,26 +66,26 @@ class MoodPicker extends StatelessWidget {
               child: GestureDetector(
                 onTap: () => onChanged(i + 1),
                 child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 200),
+                  duration: const Duration(milliseconds: 180),
                   curve: Curves.easeOut,
-                  width: selected ? 62 : 50,
-                  height: selected ? 62 : 50,
+                  width: 54,
+                  height: 54,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: selected ? null : LiyaaColors.plum,
-                    gradient: selected ? LiyaaColors.pinkGradient : null,
-                    boxShadow: [
-                      BoxShadow(
-                        color: selected ? LiyaaColors.glow : LiyaaColors.shadow,
-                        blurRadius: 18,
-                        offset: const Offset(0, 8),
-                      ),
-                    ],
+                    color: selected
+                        ? LiyaaColors.pinkSoft
+                        : Colors.white,
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(
+                      color: selected
+                          ? LiyaaColors.pink
+                          : LiyaaColors.line,
+                      width: selected ? 2 : 1.2,
+                    ),
                   ),
-                  child: Text(
-                    moodEmojis[i],
-                    style: TextStyle(fontSize: selected ? 31 : 25),
+                  child: MoodFace(
+                    i + 1,
+                    size: selected ? 36 : 30,
                   ),
                 ),
               ),
@@ -58,9 +96,9 @@ class MoodPicker extends StatelessWidget {
         Text(
           moodLabels[value - 1],
           style: const TextStyle(
-            fontSize: 15,
+            fontSize: 18,
             fontWeight: FontWeight.w700,
-            color: LiyaaColors.pinkLight,
+            color: LiyaaColors.plum,
           ),
         ),
       ],

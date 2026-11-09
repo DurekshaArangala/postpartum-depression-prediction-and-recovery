@@ -33,13 +33,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Create account'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Create account')),
       body: PageBody(
         children: [
-          const FadeIn(child: LiyaaImage('mom_baby_dark.jpg', height: 230)),
+          const ArtCard('ill_register.png', height: 220),
           const ScreenTitle(
-            'A little about you.',
+            'A little about you',
             subtitle: 'We would love to know what to call you.',
           ),
           TextField(
@@ -52,29 +52,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
               prefixIcon: Icon(Icons.favorite_border_rounded),
             ),
           ),
-          const SoftCard(
+          const TintCard(
+            color: LiyaaColors.lavenderSoft,
             padding: EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(Icons.info_outline_rounded,
-                    size: 20, color: LiyaaColors.pink),
+                    size: 22, color: LiyaaColors.lavender),
                 SizedBox(width: 12),
                 Expanded(
                   child: Text(
                     'Next, we will ask ten short questions about how you have '
                     'felt over the past seven days. It takes about two minutes.',
-                    style: TextStyle(
-                      fontSize: 14,
-                      height: 1.5,
-                      color: LiyaaColors.ink,
-                    ),
+                    style: TextStyle(fontSize: 16, height: 1.4),
                   ),
                 ),
               ],
             ),
           ),
-          PillAction(label: 'Continue to questions', onTap: _continue),
+          FilledButton(
+            onPressed: _continue,
+            child: const Text('Continue to questions'),
+          ),
         ],
       ),
     );

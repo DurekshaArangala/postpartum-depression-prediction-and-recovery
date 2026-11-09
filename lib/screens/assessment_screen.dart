@@ -33,19 +33,19 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
   Widget build(BuildContext context) {
     final q = questions[index];
 
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Your first check-in'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Your first check-in')),
       body: PageBody(
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(10),
                 child: LinearProgressIndicator(
                   value: (index + 1) / 10,
                   minHeight: 8,
-                  backgroundColor: LiyaaColors.plum,
+                  backgroundColor: LiyaaColors.pinkSoft,
                   valueColor: const AlwaysStoppedAnimation(LiyaaColors.pink),
                 ),
               ),
@@ -53,22 +53,22 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
               Text(
                 'Question ${index + 1} of 10  •  the past 7 days',
                 style: const TextStyle(
-                  fontSize: 13,
-                  color: LiyaaColors.inkSoft,
+                  fontSize: 15,
+                  color: LiyaaColors.plumSoft,
                 ),
               ),
             ],
           ),
           AnimatedSwitcher(
-            duration: const Duration(milliseconds: 280),
+            duration: const Duration(milliseconds: 260),
             child: Column(
               key: ValueKey(index),
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ScreenTitle(q.text, size: 23),
+                ScreenTitle(q.text, size: 26),
                 const SizedBox(height: 22),
                 for (var i = 0; i < 4; i++) ...[
-                  OptionCard(
+                  OptionTile(
                     text: q.options[i],
                     selected: selected[index] == i,
                     onTap: () => setState(() => selected[index] = i),
@@ -79,14 +79,14 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
             ),
           ),
           if (index == 9)
-            const SoftCard(
-              color: LiyaaColors.alert,
+            const TintCard(
+              color: LiyaaColors.alertBg,
               padding: EdgeInsets.all(16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Icon(Icons.favorite_rounded,
-                      size: 20, color: LiyaaColors.alertText),
+                      size: 22, color: LiyaaColors.alertText),
                   SizedBox(width: 12),
                   Expanded(
                     child: Text(
@@ -94,9 +94,8 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
                       'healthcare professional or local emergency services now. '
                       'Do not wait for this screening result.',
                       style: TextStyle(
-                        fontSize: 14,
-                        height: 1.5,
-                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        height: 1.4,
                         color: LiyaaColors.alertText,
                       ),
                     ),
@@ -127,7 +126,7 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
           const Text(
             'This is a screening demonstration, not a diagnosis.',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, color: LiyaaColors.inkSoft),
+            style: TextStyle(fontSize: 14, color: LiyaaColors.plumSoft),
           ),
         ],
       ),

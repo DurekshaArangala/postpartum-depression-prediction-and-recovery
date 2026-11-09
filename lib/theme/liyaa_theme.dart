@@ -1,153 +1,124 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LiyaaColors {
-  // ── Your palette ──
-  static const pinkLight = Color(0xFFFAD3E4); // #fad3e4
-  static const pinkSoft = Color(0xFFFFC0E6); // #ffc0e6
-  static const pink = Color(0xFFF695C5); // #f695c5
-  static const plum = Color(0xFF4C454C); // #4c454c
-  static const dark = Color(0xFF2A2A2A); // #2a2a2a
+  LiyaaColors._();
 
-  // ── Darker backgrounds ──
-  static const bgTop = Color(0xFF161516);
-  static const bgBottom = Color(0xFF222122);
-  static const navBar = Color(0xFF1E1D1E);
-
-  // ── Semantic ──
-  static const ink = pinkLight; // main text on dark
-  static const inkSoft = Color(0xB3FAD3E4); // secondary text
-  static const onPink = dark; // text on pink surfaces
-  static const surface = Color(0xB34C454C); // card surface (plum, 70%)
-  static const alert = pinkLight;
-  static const alertText = dark;
-  static const shadow = Color(0x66000000);
-  static const glow = Color(0x4DF695C5);
-
-  static const background = LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [bgTop, bgBottom],
-  );
-
-  static const pinkGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [pinkSoft, pink],
-  );
-
-  static const plumGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [Color(0xFF5B535B), plum],
-  );
+  static const Color lavender = Color(0xFFA9A7F2);
+  static const Color lavenderSoft = Color(0xFFECEAFF);
+  static const Color plum = Color(0xFF3B1F3D);
+  static const Color plumSoft = Color(0xFF7A6580);
+  static const Color pink = Color(0xFFF0689F);
+  static const Color pinkLight = Color(0xFFF7A6C8);
+  static const Color pinkSoft = Color(0xFFFFDDEA);
+  static const Color peach = Color(0xFFFFE6D0);
+  static const Color orange = Color(0xFFF4A04A);
+  static const Color teal = Color(0xFF7FDCD3);
+  static const Color tealSoft = Color(0xFFD5F3EF);
+  static const Color blush = Color(0xFFFFF6F9);
+  static const Color line = Color(0xFFF3DCE7);
+  static const Color alertBg = Color(0xFFFFE9E1);
+  static const Color alertText = Color(0xFF9A2F4B);
 }
 
-/// Signature "Shope" card shape: one big rounded corner, three small ones.
-const kCardRadius = BorderRadius.only(
-  topLeft: Radius.circular(44),
-  topRight: Radius.circular(18),
-  bottomLeft: Radius.circular(18),
-  bottomRight: Radius.circular(18),
-);
+ThemeData liyaaTheme() {
+  final base = ThemeData.light();
+  final text = base.textTheme.apply(
+    fontFamily: GoogleFonts.alegreya().fontFamily,
+    bodyColor: LiyaaColors.plum,
+    displayColor: LiyaaColors.plum,
+  );
 
-const kImageRadius = BorderRadius.only(
-  topLeft: Radius.circular(64),
-  topRight: Radius.circular(20),
-  bottomLeft: Radius.circular(20),
-  bottomRight: Radius.circular(20),
-);
+  final scheme = ColorScheme.fromSeed(
+    seedColor: LiyaaColors.pink,
+    brightness: Brightness.light,
+  ).copyWith(
+    primary: LiyaaColors.plum,
+    onPrimary: Colors.white,
+    secondary: LiyaaColors.pink,
+    surface: Colors.white,
+    onSurface: LiyaaColors.plum,
+  );
 
-class LiyaaTheme {
-  static ThemeData get dark {
-    final base = ThemeData(brightness: Brightness.dark, useMaterial3: true);
-    return base.copyWith(
-      scaffoldBackgroundColor: LiyaaColors.bgBottom,
-      colorScheme: const ColorScheme.dark(
-        primary: LiyaaColors.pink,
-        onPrimary: LiyaaColors.dark,
-        secondary: LiyaaColors.pinkSoft,
-        onSecondary: LiyaaColors.dark,
-        surface: LiyaaColors.dark,
-        onSurface: LiyaaColors.pinkLight,
-      ),
-      textTheme: base.textTheme.apply(
-        bodyColor: LiyaaColors.ink,
-        displayColor: LiyaaColors.ink,
-      ),
-      dividerColor: const Color(0x33FAD3E4),
-      dividerTheme: const DividerThemeData(color: Color(0x33FAD3E4)),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: LiyaaColors.surface,
-        labelStyle: const TextStyle(color: LiyaaColors.inkSoft),
-        floatingLabelStyle: const TextStyle(color: LiyaaColors.pink),
-        hintStyle: const TextStyle(color: LiyaaColors.inkSoft),
-        prefixIconColor: LiyaaColors.pink,
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-        border: const OutlineInputBorder(
-          borderRadius: kCardRadius,
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: const OutlineInputBorder(
-          borderRadius: kCardRadius,
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderRadius: kCardRadius,
-          borderSide: BorderSide(color: LiyaaColors.pink, width: 1.5),
-        ),
-      ),
-      textSelectionTheme: const TextSelectionThemeData(
-        cursorColor: LiyaaColors.pink,
-        selectionHandleColor: LiyaaColors.pink,
-      ),
-      filledButtonTheme: FilledButtonThemeData(
-        style: FilledButton.styleFrom(
-          backgroundColor: LiyaaColors.pink,
-          foregroundColor: LiyaaColors.dark,
-          disabledBackgroundColor: LiyaaColors.plum,
-          disabledForegroundColor: LiyaaColors.inkSoft,
-          minimumSize: const Size.fromHeight(54),
-          shape: const StadiumBorder(),
-          textStyle: const TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w700,
-            letterSpacing: 0.4,
-          ),
-        ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: LiyaaColors.pinkLight,
-          minimumSize: const Size.fromHeight(54),
-          side: const BorderSide(color: Color(0x80F695C5), width: 1.4),
-          shape: const StadiumBorder(),
-          textStyle: const TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: LiyaaColors.pink,
-          textStyle: const TextStyle(fontWeight: FontWeight.w600),
-        ),
-      ),
-      snackBarTheme: SnackBarThemeData(
-        behavior: SnackBarBehavior.floating,
-        backgroundColor: LiyaaColors.pinkLight,
-        contentTextStyle: const TextStyle(
-          color: LiyaaColors.dark,
-          fontWeight: FontWeight.w600,
-        ),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      ),
-    );
-  }
+  OutlineInputBorder border(Color c, [double w = 1.2]) => OutlineInputBorder(
+        borderRadius: BorderRadius.circular(16),
+        borderSide: BorderSide(color: c, width: w),
+      );
 
-  // aliases so old main.dart references keep working
-  static ThemeData get light => dark;
-  static ThemeData get theme => dark;
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: scheme,
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: text,
+    dividerColor: LiyaaColors.line,
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.white,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      centerTitle: true,
+      foregroundColor: LiyaaColors.plum,
+      iconTheme: const IconThemeData(color: LiyaaColors.plum),
+      titleTextStyle: GoogleFonts.alegreya(
+        fontSize: 22,
+        fontWeight: FontWeight.w700,
+        color: LiyaaColors.plum,
+      ),
+    ),
+    filledButtonTheme: FilledButtonThemeData(
+      style: FilledButton.styleFrom(
+        backgroundColor: LiyaaColors.plum,
+        foregroundColor: Colors.white,
+        disabledBackgroundColor: const Color(0xFFE7DCE8),
+        disabledForegroundColor: const Color(0xFFA897AA),
+        minimumSize: const Size.fromHeight(56),
+        elevation: 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+        textStyle: GoogleFonts.alegreya(
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.2,
+        ),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: LiyaaColors.plum,
+        minimumSize: const Size.fromHeight(56),
+        side: const BorderSide(color: LiyaaColors.plum, width: 1.2),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+        textStyle: GoogleFonts.alegreya(
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: LiyaaColors.plum,
+        textStyle: GoogleFonts.alegreya(
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: LiyaaColors.blush,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+      hintStyle: const TextStyle(color: LiyaaColors.plumSoft),
+      labelStyle: const TextStyle(color: LiyaaColors.plumSoft, fontSize: 16),
+      floatingLabelStyle: const TextStyle(color: LiyaaColors.pink),
+      prefixIconColor: LiyaaColors.pinkLight,
+      border: border(LiyaaColors.line),
+      enabledBorder: border(LiyaaColors.line),
+      focusedBorder: border(LiyaaColors.pink, 1.6),
+    ),
+    snackBarTheme: SnackBarThemeData(
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: LiyaaColors.plum,
+      contentTextStyle: GoogleFonts.alegreya(color: Colors.white, fontSize: 16),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    ),
+  );
 }

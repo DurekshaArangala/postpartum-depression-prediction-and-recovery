@@ -18,7 +18,7 @@ class ScoreRing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final target = max == 0 ? 0.0 : (score / max).clamp(0.0, 1.0);
+    final target = max == 0 ? 0.0 : (score / max).clamp(0.0, 1.0).toDouble();
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: 0, end: target),
       duration: const Duration(milliseconds: 1100),
@@ -36,17 +36,17 @@ class ScoreRing extends StatelessWidget {
                 Text(
                   '$score',
                   style: const TextStyle(
-                    fontSize: 54,
-                    height: 1.1,
-                    fontWeight: FontWeight.w300,
-                    color: LiyaaColors.ink,
+                    fontSize: 58,
+                    height: 1.05,
+                    fontWeight: FontWeight.w700,
+                    color: LiyaaColors.plum,
                   ),
                 ),
                 Text(
                   'out of $max',
                   style: const TextStyle(
-                    fontSize: 14,
-                    color: LiyaaColors.inkSoft,
+                    fontSize: 16,
+                    color: LiyaaColors.plumSoft,
                   ),
                 ),
               ],
@@ -65,7 +65,7 @@ class _RingPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    const stroke = 15.0;
+    const stroke = 16.0;
     final rect = Offset.zero & size;
     final arcRect = rect.deflate(stroke / 2);
 
@@ -77,7 +77,7 @@ class _RingPainter extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = stroke
-        ..color = LiyaaColors.plum,
+        ..color = LiyaaColors.pinkSoft,
     );
 
     canvas.drawArc(
@@ -92,11 +92,7 @@ class _RingPainter extends CustomPainter {
         ..shader = const SweepGradient(
           startAngle: -math.pi / 2,
           endAngle: math.pi * 3 / 2,
-          colors: [
-            LiyaaColors.pinkLight,
-            LiyaaColors.pinkSoft,
-            LiyaaColors.pink,
-          ],
+          colors: [LiyaaColors.pink, LiyaaColors.lavender],
         ).createShader(rect),
     );
   }

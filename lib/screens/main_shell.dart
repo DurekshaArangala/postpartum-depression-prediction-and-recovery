@@ -28,7 +28,7 @@ class _MainShellState extends State<MainShell> {
   static const _icons = [
     Icons.home_rounded,
     Icons.favorite_rounded,
-    Icons.bar_chart_rounded,
+    Icons.insights_rounded,
     Icons.spa_rounded,
     Icons.person_rounded,
   ];
@@ -38,19 +38,15 @@ class _MainShellState extends State<MainShell> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: LiyaaColors.bgBottom,
       body: IndexedStack(index: index, children: _pages),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-          color: LiyaaColors.navBar,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(36),
-            topRight: Radius.circular(36),
-          ),
+          color: Colors.white,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
           boxShadow: [
             BoxShadow(
-              color: Color(0x33F695C5),
-              blurRadius: 30,
+              color: Color(0x1A3B1F3D),
+              blurRadius: 24,
               offset: Offset(0, -6),
             ),
           ],
@@ -58,9 +54,9 @@ class _MainShellState extends State<MainShell> {
         child: SafeArea(
           top: false,
           child: SizedBox(
-            height: 76,
+            height: 70,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 for (var i = 0; i < _icons.length; i++)
                   Semantics(
@@ -70,48 +66,30 @@ class _MainShellState extends State<MainShell> {
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
                       onTap: () => setState(() => index = i),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 240),
-                        curve: Curves.easeOut,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: index == i ? 16 : 12,
-                          vertical: 12,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(30),
-                          gradient:
-                              index == i ? LiyaaColors.pinkGradient : null,
-                          boxShadow: index == i
-                              ? const [
-                                  BoxShadow(
-                                    color: LiyaaColors.glow,
-                                    blurRadius: 16,
-                                    offset: Offset(0, 6),
-                                  ),
-                                ]
-                              : null,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
+                      child: SizedBox(
+                        width: 60,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
                               _icons[i],
-                              size: 22,
+                              size: 28,
                               color: index == i
-                                  ? LiyaaColors.dark
-                                  : LiyaaColors.inkSoft,
+                                  ? LiyaaColors.plum
+                                  : LiyaaColors.pinkLight,
                             ),
-                            if (index == i) ...[
-                              const SizedBox(width: 6),
-                              Text(
-                                _labels[i],
-                                style: const TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w800,
-                                  color: LiyaaColors.dark,
-                                ),
+                            const SizedBox(height: 5),
+                            AnimatedContainer(
+                              duration: const Duration(milliseconds: 200),
+                              width: 6,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: index == i
+                                    ? LiyaaColors.pink
+                                    : Colors.transparent,
                               ),
-                            ],
+                            ),
                           ],
                         ),
                       ),

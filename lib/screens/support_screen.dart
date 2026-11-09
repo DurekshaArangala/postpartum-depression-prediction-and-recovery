@@ -10,82 +10,68 @@ class SupportScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LiyaaScaffold(
-      appBar: const LiyaaAppBar('Gentle support'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Gentle support')),
       body: PageBody(
         children: [
-          const LiyaaImage(
-            'pregnant_side.jpg',
-            height: 230,
-            overlay: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Be gentle with yourself',
-                  style: TextStyle(
-                    fontSize: 21,
-                    height: 1.2,
-                    fontWeight: FontWeight.w800,
-                    color: LiyaaColors.dark,
-                  ),
-                ),
-                SizedBox(height: 8),
-                Text(
-                  'A few small things that may help today.',
-                  style: TextStyle(
-                    fontSize: 13,
-                    height: 1.4,
-                    fontWeight: FontWeight.w500,
-                    color: LiyaaColors.plum,
-                  ),
-                ),
-              ],
-            ),
+          const ArtCard('ill_support.png', height: 230),
+          const ScreenTitle(
+            'Be gentle with yourself',
+            subtitle: 'A few small things that may help today.',
+            center: true,
           ),
-          const SoftCard(
+          const TintCard(
+            color: Colors.white,
+            bordered: true,
+            padding: EdgeInsets.symmetric(vertical: 22, horizontal: 18),
             child: Column(
               children: [
-                Eyebrow('Take a minute to breathe'),
-                SizedBox(height: 6),
+                SectionTitle('Take a minute to breathe'),
+                SizedBox(height: 4),
                 Text(
                   'Follow the circle. Slowly in, slowly out.',
-                  style: TextStyle(fontSize: 13, color: LiyaaColors.inkSoft),
+                  style: TextStyle(fontSize: 15, color: LiyaaColors.plumSoft),
                 ),
-                SizedBox(height: 24),
+                SizedBox(height: 22),
                 BreathingCircle(),
-                SizedBox(height: 8),
+                SizedBox(height: 6),
               ],
             ),
           ),
           const _TipCard(
-            icon: Icons.bedtime_outlined,
+            icon: Icons.bedtime_rounded,
+            glyph: 'tip_rest.png',
+            color: LiyaaColors.lavender,
             title: 'Rest when you can',
             text:
                 'Even a short rest may help you recharge. Ask someone you trust to help if possible.',
           ),
           const _TipCard(
-            icon: Icons.people_outline_rounded,
+            icon: Icons.people_rounded,
+            glyph: 'tip_connect.png',
+            color: LiyaaColors.pink,
             title: 'Stay connected',
             text:
                 'Share how you feel with someone you trust. You do not need to handle everything alone.',
           ),
           const _TipCard(
-            icon: Icons.local_drink_outlined,
+            icon: Icons.local_drink_rounded,
+            glyph: 'tip_care.png',
+            color: LiyaaColors.orange,
             title: 'Small moments of care',
             text:
                 'Have some water, eat regularly, and give yourself permission to take a break.',
           ),
-          const SoftCard(
-            color: LiyaaColors.alert,
+          const TintCard(
+            color: LiyaaColors.alertBg,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'If you need help right now',
                   style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w800,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
                     color: LiyaaColors.alertText,
                   ),
                 ),
@@ -97,23 +83,21 @@ class SupportScreen extends StatelessWidget {
                   'National Mental Health Helpline (Sri Lanka): 1926\n'
                   'Emergency ambulance: 1990',
                   style: TextStyle(
-                    fontSize: 14,
-                    height: 1.55,
-                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
+                    height: 1.45,
                     color: LiyaaColors.alertText,
                   ),
                 ),
               ],
             ),
           ),
-          PillAction(
-            label: 'Talk to Liya (demo)',
-            onTap: () => Navigator.push(
+          FilledButton(
+            onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const ChatScreen()),
             ),
+            child: const Text('Talk to Liya (demo)'),
           ),
-          const SizedBox(height: 8),
         ],
       ),
     );
@@ -123,22 +107,28 @@ class SupportScreen extends StatelessWidget {
 class _TipCard extends StatelessWidget {
   const _TipCard({
     required this.icon,
+    required this.glyph,
+    required this.color,
     required this.title,
     required this.text,
   });
 
   final IconData icon;
+  final String glyph;
+  final Color color;
   final String title;
   final String text;
 
   @override
   Widget build(BuildContext context) {
-    return SoftCard(
-      padding: const EdgeInsets.all(18),
+    return TintCard(
+      color: LiyaaColors.blush,
+      bordered: true,
+      padding: const EdgeInsets.all(16),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          IconBubble(icon),
+          GlyphTile(color: color, glyph: glyph, fallback: icon, size: 52),
           const SizedBox(width: 14),
           Expanded(
             child: Column(
@@ -147,18 +137,17 @@ class _TipCard extends StatelessWidget {
                 Text(
                   title,
                   style: const TextStyle(
-                    fontSize: 16,
+                    fontSize: 20,
                     fontWeight: FontWeight.w700,
-                    color: LiyaaColors.ink,
                   ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   text,
                   style: const TextStyle(
-                    fontSize: 14,
-                    height: 1.5,
-                    color: LiyaaColors.inkSoft,
+                    fontSize: 16,
+                    height: 1.35,
+                    color: LiyaaColors.plumSoft,
                   ),
                 ),
               ],
