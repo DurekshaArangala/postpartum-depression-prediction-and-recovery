@@ -1,0 +1,641 @@
+row_id,Age,Number of the latest pregnancy,Residence,Education Level,Marital status,Occupation before latest pregnancy,Monthly income before latest pregnancy,Husband's education level,Disease before pregnancy,History of pregnancy loss,Family type,Number of household members,Major changes or losses during pregnancy,Pregnancy length,Pregnancy plan,Regular checkups,Fear of pregnancy,Diseases during pregnancy,Mode of delivery,Depression before pregnancy,Depression during pregnancy
+0,24.0,1.0,city,university,married,student,none,university,none,none,nuclear,6 to 8,yes,10 months,no,yes,yes,none,normal delivery,negative,negative
+1,31.0,1.0,city,university,divorced,doctor,10000 to 20000,none,non-chronic disease,none,joint,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+2,31.0,1.0,city,university,married,service,10000 to 20000,university,chronic disease,none,joint,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+3,32.0,1.0,city,university,married,doctor,more than 30000,university,none,miscarriage,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+4,27.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+5,24.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,6 to 8,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+6,29.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,yes,8 months,no,yes,no,none,caesarean section,negative,negative
+7,30.0,1.0,village,university,married,doctor,more than 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+9,23.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+11,32.0,3.0,city,university,married,housewife,none,college,none,miscarriage,joint,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+12,36.0,3.0,city,university,married,housewife,less than 5000,university,non-chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+13,40.0,4.0,city,college,married,housewife,5000 to 10000,university,non-chronic disease,none,nuclear,6 to 8,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+14,22.0,2.0,city,primary school,married,service,5000 to 10000,university,chronic disease,miscarriage,joint,6 to 8,yes,9 months,yes,no,yes,none,caesarean section,negative,negative
+16,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+17,30.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+18,31.0,2.0,city,university,married,teacher,more than 30000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+20,25.0,2.0,city,primary school,married,other,5000 to 10000,primary school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,normal delivery,negative,negative
+21,23.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,yes,less than 5 months,no,no,yes,non-chronic disease,caesarean section,negative,negative
+22,23.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+23,28.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,normal delivery,negative,negative
+24,34.0,1.0,city,university,married,doctor,more than 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+25,31.0,1.0,city,university,married,doctor,10000 to 20000,university,none,still-born delivery,nuclear,2 to 5,yes,9 months,no,yes,no,none,caesarean section,negative,negative
+26,36.0,1.0,city,university,married,doctor,more than 30000,university,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+27,33.0,1.0,city,university,married,doctor,more than 30000,university,non-chronic disease,none,joint,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+28,33.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+29,26.0,1.0,city,college,married,housewife,none,university,non-chronic disease,miscarriage,joint,6 to 8,yes,8 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+30,28.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,joint,6 to 8,no,10 months,no,no,no,none,caesarean section,negative,negative
+31,28.0,2.0,city,university,married,housewife,10000 to 20000,university,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+33,28.0,1.0,city,university,married,business,less than 5000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+34,24.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+35,30.0,1.0,city,university,married,service,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+36,30.0,2.0,city,university,married,service,20000 to 30000,university,non-chronic disease,miscarriage,joint,2 to 5,yes,less than 5 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+39,36.0,2.0,city,university,married,service,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+40,22.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+41,29.0,1.0,city,university,married,housewife,less than 5000,university,chronic disease,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+43,27.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+45,25.0,2.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,yes,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,positive
+47,25.0,1.0,city,university,married,student,none,university,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+49,29.0,1.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+50,31.0,1.0,city,university,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,yes,10 months,no,yes,no,none,caesarean section,negative,negative
+51,28.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+52,29.0,1.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+53,30.0,3.0,city,university,married,teacher,20000 to 30000,university,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+54,24.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+56,31.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+57,25.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+58,19.0,1.0,city,high school,married,housewife,none,university,none,none,joint,2 to 5,yes,8 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+59,27.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,no,none,caesarean section,negative,negative
+60,26.0,1.0,city,university,married,student,none,university,chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,no,yes,non-chronic disease,normal delivery,negative,negative
+61,34.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+62,37.0,4.0,city,university,married,service,more than 30000,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+63,31.0,2.0,city,university,married,service,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,none,normal delivery,negative,negative
+64,28.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+66,30.0,1.0,city,university,married,doctor,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+67,26.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+68,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+73,28.0,2.0,city,university,married,other,10000 to 20000,university,none,miscarriage,joint,6 to 8,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+74,22.0,2.0,city,university,married,housewife,none,primary school,none,none,joint,6 to 8,yes,less than 5 months,yes,yes,no,none,caesarean section,negative,positive
+76,30.0,2.0,city,university,married,housewife,none,university,none,still-born delivery,nuclear,2 to 5,no,9 months,yes,yes,no,chronic disease,normal delivery,negative,positive
+77,29.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+78,32.0,5.0,city,college,married,housewife,none,university,none,still-born delivery,nuclear,6 to 8,no,8 months,no,yes,yes,none,caesarean section,negative,negative
+79,18.0,1.0,city,high school,married,housewife,none,high school,none,none,joint,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+80,34.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+82,27.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+83,31.0,2.0,city,university,married,housewife,none,high school,none,none,joint,9 or more,no,9 months,no,yes,no,none,caesarean section,negative,negative
+84,28.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+85,26.0,2.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,8 months,no,yes,no,none,caesarean section,negative,negative
+86,36.0,3.0,city,college,married,housewife,none,college,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+87,36.0,2.0,city,university,married,housewife,less than 5000,university,none,miscarriage,nuclear,2 to 5,yes,8 months,yes,yes,yes,none,caesarean section,negative,negative
+88,30.0,1.0,city,university,married,other,more than 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+89,29.0,1.0,city,university,married,housewife,5000 to 10000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+91,33.0,3.0,city,university,married,teacher,more than 30000,university,none,none,joint,6 to 8,yes,9 months,no,yes,no,none,caesarean section,negative,negative
+92,22.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+93,25.0,2.0,city,university,married,student,none,university,non-chronic disease,none,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+94,22.0,1.0,village,university,married,student,none,university,none,none,joint,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+95,30.0,1.0,city,university,married,service,10000 to 20000,university,chronic disease,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+98,31.0,1.0,city,university,married,housewife,20000 to 30000,university,non-chronic disease,none,joint,6 to 8,yes,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+99,26.0,1.0,city,university,married,other,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+101,27.0,1.0,city,university,married,service,more than 30000,university,none,none,joint,6 to 8,no,9 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+102,37.0,2.0,city,university,married,teacher,more than 30000,university,chronic disease,none,nuclear,2 to 5,yes,7 months,yes,yes,yes,none,caesarean section,negative,negative
+103,28.0,1.0,city,university,married,other,more than 30000,university,non-chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,positive
+104,32.0,2.0,city,university,married,other,10000 to 20000,university,none,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,none,normal delivery,negative,negative
+105,23.0,1.0,city,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+106,31.0,2.0,city,college,married,service,5000 to 10000,university,none,none,nuclear,2 to 5,yes,8 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+107,28.0,1.0,village,university,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+108,25.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,negative
+109,26.0,2.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+112,20.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,less than 5 months,no,yes,no,none,caesarean section,negative,negative
+113,32.0,1.0,city,university,married,service,20000 to 30000,university,chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+114,36.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+115,26.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,6 to 8,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+116,26.0,1.0,city,university,married,teacher,none,university,none,none,joint,2 to 5,no,10 months,yes,no,yes,none,caesarean section,negative,negative
+118,38.0,2.0,city,college,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+119,33.0,2.0,city,university,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+121,32.0,2.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,no,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+122,31.0,1.0,city,university,married,service,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+123,25.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,positive
+124,29.0,1.0,city,university,married,student,less than 5000,university,none,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+125,26.0,1.0,city,university,married,teacher,5000 to 10000,college,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+126,33.0,2.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,positive
+127,31.0,2.0,city,university,married,service,more than 30000,university,none,miscarriage,joint,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,positive
+128,27.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+129,29.0,2.0,city,university,married,service,10000 to 20000,university,none,miscarriage,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+130,22.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,yes,no,yes,non-chronic disease,normal delivery,negative,negative
+132,31.0,2.0,city,university,married,business,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+133,21.0,1.0,city,college,married,student,none,university,,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+134,33.0,3.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,none,caesarean section,positive,negative
+135,30.0,3.0,city,university,married,teacher,more than 30000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+136,29.0,3.0,city,university,married,service,none,university,none,miscarriage,joint,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,positive
+137,27.0,1.0,city,university,married,service,20000 to 30000,university,none,none,joint,6 to 8,yes,9 months,no,yes,no,none,caesarean section,negative,positive
+139,22.0,1.0,city,university,married,student,5000 to 10000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+140,26.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+141,34.0,2.0,city,university,married,service,more than 30000,university,none,miscarriage,nuclear,6 to 8,no,9 months,no,yes,yes,none,caesarean section,negative,negative
+142,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,positive
+144,38.0,1.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,8 months,no,yes,yes,chronic disease,caesarean section,positive,negative
+145,33.0,1.0,city,university,divorced,doctor,more than 30000,university,none,none,joint,2 to 5,yes,10 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+146,26.0,1.0,city,university,married,other,10000 to 20000,university,non-chronic disease,none,joint,6 to 8,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+149,26.0,1.0,city,university,married,other,20000 to 30000,university,none,miscarriage,joint,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,positive
+151,34.0,1.0,city,university,married,business,5000 to 10000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+154,26.0,2.0,city,university,married,student,20000 to 30000,university,none,none,joint,6 to 8,no,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+155,25.0,1.0,city,university,married,housewife,none,university,none,still-born delivery,joint,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+157,27.0,1.0,city,university,married,doctor,20000 to 30000,university,none,none,joint,6 to 8,no,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+158,28.0,1.0,city,university,married,student,less than 5000,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,normal delivery,positive,negative
+159,24.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,9 or more,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+160,32.0,1.0,city,university,married,service,20000 to 30000,college,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+161,34.0,2.0,city,university,married,doctor,20000 to 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+162,28.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+163,36.0,3.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+164,32.0,1.0,city,university,married,housewife,less than 5000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+166,33.0,2.0,city,college,married,housewife,none,university,chronic disease,miscarriage,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+167,33.0,1.0,city,university,married,service,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+168,28.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+169,25.0,1.0,city,high school,married,housewife,none,high school,non-chronic disease,none,joint,6 to 8,no,8 months,yes,yes,yes,none,caesarean section,negative,negative
+170,28.0,1.0,city,university,married,doctor,more than 30000,university,chronic disease,none,joint,6 to 8,no,10 months,no,yes,no,none,caesarean section,negative,negative
+171,34.0,2.0,city,university,married,doctor,10000 to 20000,university,chronic disease,miscarriage,nuclear,2 to 5,no,10 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+172,29.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,positive
+173,33.0,2.0,city,university,married,teacher,20000 to 30000,university,none,none,joint,6 to 8,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+174,35.0,2.0,city,university,married,teacher,10000 to 20000,university,none,none,joint,6 to 8,yes,9 months,no,yes,no,none,caesarean section,positive,positive
+175,25.0,1.0,city,university,married,student,less than 5000,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+177,27.0,1.0,village,university,married,other,20000 to 30000,university,none,none,joint,6 to 8,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+178,26.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+179,32.0,1.0,city,university,married,other,more than 30000,university,none,miscarriage,joint,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+180,27.0,2.0,city,university,married,student,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+181,23.0,1.0,city,university,married,student,none,university,non-chronic disease,none,joint,6 to 8,no,8 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+182,24.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+183,33.0,2.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,8 months,no,yes,no,chronic disease,caesarean section,negative,negative
+184,26.0,2.0,city,university,married,housewife,10000 to 20000,university,none,none,joint,2 to 5,no,8 months,yes,yes,yes,none,normal delivery,negative,negative
+185,32.0,1.0,city,university,married,housewife,none,university,chronic disease,none,joint,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+187,24.0,1.0,city,university,married,student,none,university,none,none,joint,9 or more,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+189,27.0,1.0,city,university,married,doctor,5000 to 10000,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+193,22.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+194,25.0,2.0,village,college,married,housewife,less than 5000,college,non-chronic disease,miscarriage,joint,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,positive
+195,30.0,1.0,city,university,married,student,none,high school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,positive
+196,30.0,1.0,city,university,married,service,20000 to 30000,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,positive,negative
+197,32.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+198,24.0,2.0,city,university,married,student,20000 to 30000,college,chronic disease,none,joint,2 to 5,no,9 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+199,41.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,6 to 8,no,9 months,yes,yes,yes,chronic disease,caesarean section,positive,negative
+200,26.0,2.0,city,university,married,teacher,5000 to 10000,high school,none,still-born delivery,joint,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+201,38.0,3.0,city,university,married,housewife,none,none,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+202,21.0,1.0,city,university,married,student,less than 5000,university,none,none,joint,9 or more,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+203,27.0,2.0,village,university,married,service,20000 to 30000,university,none,still-born delivery,nuclear,2 to 5,yes,8 months,no,yes,yes,none,caesarean section,negative,negative
+205,30.0,1.0,city,university,married,housewife,none,college,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+206,26.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,6 months,yes,yes,yes,none,normal delivery,negative,negative
+207,29.0,1.0,city,university,married,service,20000 to 30000,university,none,none,joint,2 to 5,no,8 months,yes,yes,yes,none,caesarean section,negative,negative
+210,27.0,3.0,city,university,married,teacher,5000 to 10000,college,none,miscarriage,nuclear,2 to 5,yes,9 months,no,no,no,non-chronic disease,caesarean section,negative,negative
+211,21.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+212,25.0,2.0,city,university,married,housewife,none,college,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,none,normal delivery,negative,positive
+213,31.0,2.0,city,university,married,service,more than 30000,university,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+214,33.0,3.0,city,university,married,housewife,none,university,non-chronic disease,miscarriage,nuclear,2 to 5,yes,less than 5 months,no,yes,no,chronic disease,caesarean section,negative,negative
+215,29.0,1.0,city,college,married,housewife,none,college,none,none,joint,6 to 8,no,10 months,no,yes,yes,none,normal delivery,negative,negative
+216,37.0,3.0,city,university,married,service,more than 30000,university,none,still-born delivery,nuclear,6 to 8,yes,8 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+218,22.0,1.0,city,university,married,housewife,none,high school,none,none,nuclear,2 to 5,no,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+219,30.0,3.0,city,university,married,housewife,none,university,non-chronic disease,none,nuclear,2 to 5,yes,10 months,no,yes,yes,none,normal delivery,negative,positive
+220,31.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,joint,6 to 8,yes,10 months,no,no,yes,non-chronic disease,caesarean section,negative,positive
+221,23.0,2.0,village,university,married,housewife,none,university,none,none,joint,9 or more,yes,10 months,yes,yes,yes,non-chronic disease,normal delivery,positive,positive
+224,32.0,2.0,city,university,married,doctor,more than 30000,university,none,none,nuclear,2 to 5,no,8 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+225,26.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,positive
+226,31.0,2.0,city,university,married,student,none,university,none,none,joint,6 to 8,yes,8 months,yes,yes,yes,none,caesarean section,negative,positive
+227,34.0,1.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+228,30.0,1.0,city,university,married,service,20000 to 30000,university,none,none,joint,6 to 8,no,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+229,31.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+230,30.0,2.0,city,university,married,housewife,none,high school,none,none,nuclear,2 to 5,yes,9 months,yes,no,yes,chronic disease,caesarean section,negative,negative
+231,28.0,1.0,city,university,married,service,20000 to 30000,university,none,none,joint,9 or more,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+232,23.0,1.0,city,university,married,teacher,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,none,caesarean section,negative,negative
+233,26.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+234,32.0,2.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+236,19.0,1.0,city,college,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+237,27.0,1.0,village,university,married,teacher,less than 5000,college,chronic disease,none,joint,6 to 8,yes,10 months,yes,yes,yes,none,normal delivery,negative,negative
+238,22.0,2.0,city,high school,married,housewife,none,college,none,none,nuclear,6 to 8,no,9 months,no,yes,no,none,caesarean section,negative,negative
+239,26.0,2.0,city,university,married,housewife,10000 to 20000,university,non-chronic disease,none,joint,6 to 8,no,8 months,no,yes,yes,non-chronic disease,normal delivery,negative,positive
+240,30.0,1.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+242,20.0,1.0,village,college,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,none,caesarean section,negative,negative
+243,28.0,1.0,city,university,married,business,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+244,25.0,2.0,city,high school,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,10 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+245,36.0,2.0,city,university,married,teacher,more than 30000,university,none,none,joint,6 to 8,no,10 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+248,31.0,2.0,city,university,married,teacher,10000 to 20000,university,chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+249,26.0,2.0,city,university,married,student,none,university,chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+250,38.0,2.0,city,university,married,teacher,10000 to 20000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+251,23.0,1.0,city,university,married,other,20000 to 30000,university,none,none,nuclear,2 to 5,no,8 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+252,33.0,2.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,negative
+253,23.0,2.0,village,university,married,housewife,none,university,none,none,joint,6 to 8,yes,7 months,no,no,yes,non-chronic disease,normal delivery,negative,positive
+254,34.0,1.0,city,university,married,other,more than 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+255,31.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+256,33.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+257,20.0,1.0,village,college,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+258,31.0,2.0,city,university,married,other,20000 to 30000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+259,20.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,positive
+260,21.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,yes,8 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+263,30.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+264,30.0,1.0,city,university,married,teacher,20000 to 30000,university,non-chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+266,30.0,1.0,city,university,married,teacher,more than 30000,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+267,36.0,2.0,city,university,married,service,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+268,30.0,1.0,city,university,married,service,20000 to 30000,university,none,miscarriage,joint,6 to 8,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+269,27.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,less than 5 months,no,yes,yes,none,caesarean section,negative,negative
+270,26.0,2.0,city,university,married,student,none,university,none,miscarriage,joint,9 or more,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+271,34.0,1.0,village,university,married,teacher,10000 to 20000,university,non-chronic disease,none,joint,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+272,26.0,1.0,village,university,married,student,none,university,none,miscarriage,joint,6 to 8,no,9 months,no,yes,yes,none,caesarean section,negative,negative
+273,25.0,1.0,village,college,married,housewife,none,college,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,positive,negative
+275,29.0,1.0,city,university,married,housewife,none,university,none,none,joint,9 or more,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+277,18.0,2.0,village,high school,married,housewife,none,none,none,miscarriage,joint,9 or more,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+278,26.0,2.0,city,university,married,other,10000 to 20000,college,none,none,nuclear,2 to 5,yes,6 months,yes,yes,yes,non-chronic disease,caesarean section,positive,positive
+280,32.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+281,24.0,2.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,no,yes,yes,none,normal delivery,negative,positive
+283,32.0,5.0,city,university,married,service,more than 30000,university,chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+284,23.0,1.0,city,university,married,student,none,university,non-chronic disease,none,joint,2 to 5,no,9 months,no,yes,yes,non-chronic disease,caesarean section,positive,negative
+285,35.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+286,31.0,3.0,city,university,married,housewife,none,university,non-chronic disease,miscarriage,joint,9 or more,no,10 months,yes,yes,no,non-chronic disease,caesarean section,positive,positive
+287,32.0,1.0,village,university,married,teacher,5000 to 10000,university,chronic disease,none,joint,9 or more,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+288,21.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,yes,9 months,yes,yes,no,none,caesarean section,negative,positive
+289,22.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,none,caesarean section,negative,positive
+290,19.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+291,22.0,2.0,city,university,married,teacher,less than 5000,high school,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+292,33.0,1.0,village,university,divorced,student,none,university,non-chronic disease,none,nuclear,2 to 5,yes,10 months,no,yes,yes,none,caesarean section,negative,positive
+293,32.0,1.0,city,university,married,other,more than 30000,university,chronic disease,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,non-chronic disease,caesarean section,positive,negative
+295,35.0,1.0,city,university,married,teacher,20000 to 30000,university,chronic disease,none,nuclear,2 to 5,yes,9 months,no,yes,no,non-chronic disease,normal delivery,negative,negative
+296,24.0,3.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,yes,10 months,yes,yes,yes,chronic disease,normal delivery,negative,positive
+297,27.0,1.0,city,college,married,housewife,none,college,chronic disease,none,joint,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+298,30.0,2.0,city,college,married,housewife,none,college,non-chronic disease,miscarriage,nuclear,2 to 5,no,less than 5 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+299,28.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,9 months,no,yes,yes,chronic disease,caesarean section,positive,negative
+300,24.0,1.0,city,university,married,student,none,college,chronic disease,none,joint,2 to 5,no,8 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+301,28.0,1.0,city,university,married,business,5000 to 10000,university,none,none,joint,2 to 5,no,8 months,yes,yes,yes,none,caesarean section,negative,negative
+302,34.0,4.0,city,university,married,teacher,20000 to 30000,college,non-chronic disease,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+303,33.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+304,32.0,3.0,city,college,married,housewife,none,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+307,24.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,yes,yes,yes,chronic disease,normal delivery,negative,positive
+308,26.0,2.0,city,college,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,no,less than 5 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+309,25.0,2.0,city,college,married,housewife,none,high school,none,none,joint,2 to 5,yes,8 months,yes,yes,no,none,caesarean section,negative,negative
+310,30.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+311,27.0,1.0,city,university,married,other,5000 to 10000,college,none,none,joint,6 to 8,yes,7 months,no,yes,no,none,caesarean section,negative,positive
+312,24.0,2.0,city,university,married,student,none,university,none,miscarriage,nuclear,2 to 5,no,7 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+313,35.0,1.0,city,university,married,doctor,20000 to 30000,university,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+314,32.0,2.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+316,31.0,1.0,city,university,married,teacher,20000 to 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,positive
+318,22.0,1.0,city,college,married,housewife,none,college,none,none,joint,6 to 8,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,positive,negative
+319,27.0,2.0,village,university,married,housewife,less than 5000,university,chronic disease,none,joint,2 to 5,yes,8 months,no,yes,yes,chronic disease,normal delivery,positive,negative
+320,21.0,1.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+321,26.0,1.0,village,university,married,teacher,less than 5000,university,chronic disease,none,joint,2 to 5,no,10 months,no,yes,yes,chronic disease,normal delivery,negative,negative
+322,30.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+323,26.0,1.0,city,university,married,housewife,5000 to 10000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+324,25.0,1.0,city,university,married,other,10000 to 20000,high school,none,none,joint,6 to 8,yes,8 months,no,yes,yes,none,caesarean section,negative,negative
+325,23.0,2.0,village,college,married,housewife,none,high school,none,none,joint,6 to 8,no,10 months,no,yes,yes,none,caesarean section,negative,negative
+326,30.0,2.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+328,21.0,1.0,city,college,married,student,none,college,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+329,25.0,1.0,city,university,married,other,5000 to 10000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+330,22.0,1.0,village,college,married,housewife,none,college,none,none,nuclear,2 to 5,yes,10 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+331,27.0,2.0,city,university,married,service,10000 to 20000,university,non-chronic disease,none,nuclear,2 to 5,yes,less than 5 months,no,yes,yes,none,caesarean section,positive,negative
+332,27.0,3.0,city,university,married,other,10000 to 20000,university,none,miscarriage,joint,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,positive
+333,27.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,positive
+334,32.0,1.0,city,university,married,teacher,20000 to 30000,university,non-chronic disease,none,joint,6 to 8,yes,10 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+335,31.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+336,26.0,1.0,city,university,married,student,none,high school,chronic disease,none,joint,2 to 5,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+337,26.0,2.0,village,university,married,housewife,none,university,chronic disease,miscarriage,joint,9 or more,yes,10 months,yes,yes,yes,chronic disease,caesarean section,positive,negative
+338,26.0,1.0,city,university,married,student,less than 5000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+339,35.0,2.0,city,university,married,other,20000 to 30000,university,none,none,joint,2 to 5,no,6 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+340,24.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,yes,9 months,yes,no,no,chronic disease,normal delivery,negative,negative
+341,27.0,1.0,city,university,married,other,20000 to 30000,university,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+342,30.0,2.0,village,university,married,service,10000 to 20000,university,non-chronic disease,none,nuclear,2 to 5,yes,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+343,24.0,2.0,city,university,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,no,9 months,no,yes,yes,none,normal delivery,negative,negative
+345,27.0,1.0,city,university,married,doctor,10000 to 20000,university,chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+346,25.0,1.0,city,university,married,business,20000 to 30000,university,none,none,joint,2 to 5,no,10 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+347,30.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+348,27.0,2.0,city,university,married,student,none,university,none,none,joint,9 or more,no,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+349,22.0,1.0,city,university,married,student,none,college,none,none,joint,2 to 5,no,9 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+350,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+354,30.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+355,32.0,2.0,city,university,married,teacher,20000 to 30000,university,none,none,joint,2 to 5,yes,10 months,no,yes,yes,non-chronic disease,caesarean section,positive,negative
+356,32.0,2.0,city,university,married,housewife,none,university,none,miscarriage,joint,9 or more,no,9 months,no,no,no,non-chronic disease,normal delivery,negative,negative
+357,27.0,1.0,village,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+358,24.0,1.0,city,university,married,student,none,university,non-chronic disease,none,joint,6 to 8,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+359,26.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+360,26.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+361,32.0,3.0,city,university,married,housewife,none,university,none,none,joint,9 or more,yes,9 months,no,yes,no,none,caesarean section,positive,positive
+362,23.0,2.0,village,college,married,housewife,none,high school,none,miscarriage,nuclear,2 to 5,no,9 months,no,yes,no,none,caesarean section,negative,negative
+363,26.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,9 or more,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+365,30.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+368,26.0,1.0,village,university,married,other,10000 to 20000,university,non-chronic disease,none,joint,2 to 5,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+369,35.0,4.0,city,college,married,housewife,none,university,chronic disease,none,joint,9 or more,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+370,31.0,1.0,city,university,married,other,more than 30000,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+371,29.0,2.0,village,university,married,student,none,university,none,none,joint,6 to 8,no,10 months,yes,yes,yes,none,normal delivery,negative,positive
+373,34.0,1.0,city,university,married,service,5000 to 10000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+374,29.0,2.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,no,yes,no,none,normal delivery,negative,negative
+375,30.0,2.0,city,university,married,housewife,10000 to 20000,university,none,none,nuclear,6 to 8,no,9 months,no,yes,no,none,caesarean section,negative,positive
+376,26.0,2.0,village,university,married,housewife,none,university,none,none,joint,2 to 5,no,6 months,yes,yes,no,none,caesarean section,negative,negative
+377,30.0,1.0,city,university,married,doctor,10000 to 20000,university,chronic disease,miscarriage,joint,6 to 8,yes,9 months,yes,yes,yes,none,caesarean section,positive,positive
+378,25.0,4.0,city,college,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,9 months,no,yes,yes,none,normal delivery,positive,positive
+379,31.0,4.0,city,university,married,other,more than 30000,university,none,miscarriage,nuclear,2 to 5,yes,7 months,yes,yes,no,non-chronic disease,normal delivery,positive,negative
+380,32.0,3.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,no,yes,yes,non-chronic disease,caesarean section,positive,positive
+382,21.0,2.0,city,high school,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+383,30.0,2.0,city,university,married,other,more than 30000,university,none,none,joint,6 to 8,yes,8 months,no,yes,no,none,caesarean section,negative,positive
+384,26.0,1.0,village,university,married,student,none,university,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,none,normal delivery,negative,positive
+385,23.0,1.0,village,university,married,housewife,none,high school,non-chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,positive,positive
+387,21.0,2.0,city,high school,married,housewife,10000 to 20000,high school,none,none,joint,2 to 5,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+388,30.0,2.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,8 months,no,no,yes,none,normal delivery,negative,negative
+389,27.0,1.0,city,university,married,housewife,none,college,chronic disease,none,joint,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+391,31.0,1.0,city,university,married,other,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+392,25.0,1.0,village,university,married,student,none,university,none,none,joint,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+395,32.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+396,21.0,1.0,city,college,married,housewife,none,university,chronic disease,none,joint,9 or more,no,10 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+397,23.0,1.0,city,university,married,student,more than 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+398,26.0,1.0,city,university,married,student,5000 to 10000,university,non-chronic disease,none,joint,9 or more,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+401,26.0,3.0,city,university,married,student,none,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+402,31.0,3.0,city,college,married,housewife,none,high school,chronic disease,none,joint,6 to 8,yes,7 months,no,yes,no,chronic disease,caesarean section,negative,positive
+403,27.0,1.0,city,university,divorced,student,none,university,none,none,joint,2 to 5,yes,10 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+404,31.0,1.0,city,university,married,other,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+405,40.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+406,30.0,1.0,city,university,married,student,none,university,chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+407,32.0,1.0,city,university,married,other,more than 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+408,31.0,2.0,city,university,married,housewife,none,college,none,miscarriage,joint,2 to 5,no,10 months,yes,no,yes,none,normal delivery,negative,negative
+409,28.0,2.0,city,university,married,housewife,10000 to 20000,university,chronic disease,miscarriage,joint,2 to 5,no,9 months,no,no,yes,non-chronic disease,caesarean section,negative,positive
+410,24.0,1.0,city,college,married,other,10000 to 20000,college,none,none,nuclear,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+412,25.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,chronic disease,normal delivery,negative,negative
+413,24.0,1.0,city,college,married,student,none,university,none,none,joint,6 to 8,no,10 months,no,yes,yes,non-chronic disease,normal delivery,positive,negative
+414,26.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,positive,negative
+415,33.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+416,25.0,1.0,city,university,married,student,none,university,none,none,joint,6 to 8,yes,10 months,yes,yes,yes,none,caesarean section,negative,positive
+417,22.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,negative
+419,23.0,1.0,city,university,married,student,none,primary school,non-chronic disease,none,nuclear,2 to 5,yes,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+420,30.0,1.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,no,9 months,no,yes,yes,none,caesarean section,negative,positive
+421,27.0,1.0,city,university,married,student,none,university,chronic disease,none,joint,9 or more,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+422,25.0,2.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,no,none,caesarean section,positive,negative
+423,27.0,2.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,normal delivery,negative,negative
+424,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,chronic disease,normal delivery,negative,negative
+425,30.0,1.0,city,university,married,housewife,less than 5000,university,chronic disease,none,joint,6 to 8,no,8 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+426,31.0,1.0,city,university,married,other,10000 to 20000,university,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,positive,negative
+427,32.0,1.0,city,university,married,other,5000 to 10000,university,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,positive,negative
+429,30.0,1.0,city,university,married,housewife,5000 to 10000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+430,27.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,no,chronic disease,normal delivery,negative,negative
+431,34.0,2.0,city,university,married,other,more than 30000,university,chronic disease,none,nuclear,2 to 5,yes,6 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+432,31.0,1.0,city,university,married,housewife,5000 to 10000,university,non-chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+433,29.0,3.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,yes,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+434,38.0,1.0,city,university,married,other,10000 to 20000,university,chronic disease,none,joint,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+435,31.0,1.0,city,university,married,teacher,more than 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+437,25.0,1.0,city,university,married,student,none,college,none,none,nuclear,2 to 5,yes,10 months,no,yes,no,none,caesarean section,negative,negative
+438,42.0,2.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,yes,8 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+439,26.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,joint,6 to 8,no,9 months,no,yes,yes,none,caesarean section,negative,positive
+440,28.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+441,30.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,no,yes,no,none,normal delivery,negative,negative
+442,30.0,2.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+443,27.0,2.0,city,university,married,teacher,5000 to 10000,university,non-chronic disease,none,joint,6 to 8,no,8 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+444,22.0,1.0,village,college,married,housewife,none,high school,none,none,joint,2 to 5,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,positive,negative
+445,23.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,no,7 months,yes,yes,yes,none,normal delivery,negative,negative
+446,27.0,2.0,city,university,married,housewife,none,university,none,still-born delivery,joint,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,positive,negative
+447,27.0,1.0,village,university,married,student,none,high school,non-chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+449,26.0,1.0,city,university,married,housewife,none,university,chronic disease,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+450,30.0,3.0,city,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+451,27.0,1.0,city,university,married,doctor,20000 to 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+452,23.0,1.0,village,university,married,student,none,university,non-chronic disease,none,joint,6 to 8,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+453,30.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,6 to 8,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+454,23.0,1.0,village,university,married,housewife,none,university,none,none,joint,6 to 8,yes,10 months,yes,yes,yes,none,normal delivery,negative,positive
+455,24.0,1.0,city,university,married,housewife,none,university,none,none,joint,9 or more,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+456,26.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+457,34.0,1.0,city,university,married,business,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+458,21.0,1.0,city,college,married,other,less than 5000,primary school,none,none,joint,2 to 5,no,10 months,no,yes,no,none,normal delivery,negative,negative
+459,37.0,2.0,city,university,married,service,more than 30000,university,none,none,joint,6 to 8,no,10 months,no,yes,yes,none,normal delivery,negative,positive
+460,28.0,1.0,city,university,married,housewife,5000 to 10000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+461,21.0,2.0,village,high school,married,housewife,none,primary school,chronic disease,none,nuclear,2 to 5,no,less than 5 months,no,yes,yes,non-chronic disease,normal delivery,negative,negative
+463,27.0,3.0,village,college,married,housewife,10000 to 20000,high school,none,miscarriage,joint,6 to 8,no,8 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+464,19.0,1.0,city,high school,married,housewife,5000 to 10000,high school,none,none,joint,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+465,30.0,1.0,city,high school,married,housewife,20000 to 30000,high school,chronic disease,none,joint,2 to 5,no,9 months,no,yes,no,none,caesarean section,negative,positive
+466,30.0,3.0,village,high school,married,housewife,10000 to 20000,primary school,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+467,22.0,2.0,village,high school,married,housewife,10000 to 20000,none,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+468,27.0,2.0,city,high school,married,housewife,5000 to 10000,high school,none,none,nuclear,2 to 5,no,9 months,no,yes,no,none,caesarean section,negative,negative
+469,22.0,1.0,city,high school,married,housewife,5000 to 10000,primary school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+470,25.0,2.0,city,high school,married,housewife,10000 to 20000,high school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+471,27.0,2.0,city,college,married,housewife,5000 to 10000,college,none,none,joint,2 to 5,yes,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+472,24.0,1.0,city,college,married,housewife,10000 to 20000,university,none,miscarriage,nuclear,2 to 5,yes,8 months,yes,yes,no,none,caesarean section,negative,negative
+474,20.0,1.0,city,high school,married,housewife,20000 to 30000,primary school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+477,26.0,2.0,village,primary school,married,housewife,5000 to 10000,primary school,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,positive
+478,22.0,1.0,city,university,married,housewife,less than 5000,university,non-chronic disease,none,joint,2 to 5,no,8 months,yes,yes,no,none,normal delivery,negative,positive
+479,34.0,2.0,city,university,married,service,20000 to 30000,college,none,miscarriage,nuclear,2 to 5,no,8 months,yes,yes,no,none,caesarean section,negative,positive
+480,30.0,2.0,village,primary school,married,housewife,20000 to 30000,high school,none,none,nuclear,2 to 5,no,9 months,yes,no,no,none,caesarean section,negative,negative
+481,22.0,2.0,city,none,married,housewife,5000 to 10000,none,none,still-born delivery,nuclear,2 to 5,no,8 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+482,24.0,3.0,city,high school,married,housewife,20000 to 30000,high school,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+485,23.0,2.0,city,high school,married,housewife,5000 to 10000,high school,none,none,joint,6 to 8,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+487,23.0,2.0,village,primary school,married,housewife,5000 to 10000,high school,none,none,joint,2 to 5,no,9 months,yes,no,yes,chronic disease,caesarean section,negative,negative
+488,20.0,1.0,city,college,married,housewife,10000 to 20000,high school,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+489,24.0,3.0,city,primary school,married,housewife,10000 to 20000,high school,chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+490,22.0,2.0,city,high school,married,housewife,10000 to 20000,high school,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+491,21.0,2.0,city,college,married,housewife,20000 to 30000,college,none,miscarriage,joint,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+492,30.0,3.0,village,primary school,divorced,other,5000 to 10000,primary school,non-chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,normal delivery,negative,positive
+493,26.0,4.0,village,high school,married,housewife,none,high school,none,still-born delivery,nuclear,6 to 8,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+494,24.0,2.0,village,primary school,married,housewife,none,primary school,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+495,21.0,1.0,city,college,married,housewife,none,high school,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+496,30.0,2.0,village,primary school,married,housewife,none,none,none,none,joint,6 to 8,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+498,29.0,1.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+499,33.0,4.0,city,university,married,housewife,none,university,none,still-born delivery,joint,6 to 8,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+500,18.0,1.0,village,college,married,housewife,none,high school,none,none,joint,6 to 8,no,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+501,23.0,1.0,city,high school,married,housewife,none,primary school,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+502,30.0,3.0,city,university,married,housewife,none,college,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,positive,negative
+504,29.0,3.0,city,high school,married,business,5000 to 10000,high school,chronic disease,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+505,23.0,1.0,city,high school,married,other,5000 to 10000,high school,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+506,28.0,2.0,city,high school,married,housewife,none,college,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+507,23.0,1.0,city,high school,married,other,5000 to 10000,college,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+509,27.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+510,24.0,2.0,city,college,married,teacher,5000 to 10000,university,non-chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+511,18.0,1.0,city,high school,married,other,5000 to 10000,high school,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+512,37.0,4.0,city,high school,married,other,5000 to 10000,primary school,none,none,nuclear,6 to 8,yes,10 months,yes,yes,no,none,caesarean section,positive,negative
+513,19.0,1.0,village,college,married,housewife,none,college,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,positive
+514,30.0,5.0,village,primary school,married,other,less than 5000,primary school,chronic disease,miscarriage,joint,9 or more,yes,9 months,yes,no,yes,chronic disease,caesarean section,negative,positive
+516,25.0,3.0,village,high school,married,housewife,none,high school,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+517,22.0,3.0,village,high school,married,housewife,none,high school,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,positive
+519,33.0,6.0,village,primary school,married,business,less than 5000,primary school,chronic disease,still-born delivery,nuclear,6 to 8,no,9 months,no,no,yes,chronic disease,caesarean section,negative,positive
+520,21.0,1.0,village,high school,married,housewife,none,high school,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+521,28.0,3.0,village,primary school,married,housewife,none,high school,none,none,joint,6 to 8,no,8 months,no,yes,no,none,normal delivery,negative,positive
+522,26.0,1.0,city,university,married,teacher,20000 to 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+523,33.0,3.0,city,college,married,housewife,none,high school,chronic disease,still-born delivery,nuclear,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,positive
+524,19.0,1.0,village,high school,married,housewife,none,college,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,normal delivery,negative,positive
+525,28.0,3.0,city,college,married,other,5000 to 10000,primary school,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,positive
+526,13.0,1.0,village,primary school,married,housewife,none,high school,none,none,joint,6 to 8,no,9 months,no,yes,yes,none,normal delivery,negative,negative
+527,34.0,7.0,village,primary school,married,housewife,10000 to 20000,primary school,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,no,no,no,chronic disease,caesarean section,negative,negative
+528,32.0,5.0,village,none,married,housewife,5000 to 10000,primary school,none,none,nuclear,6 to 8,no,9 months,no,no,yes,non-chronic disease,normal delivery,negative,negative
+529,19.0,1.0,village,college,married,housewife,none,high school,none,none,joint,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+530,32.0,3.0,village,high school,married,housewife,none,primary school,chronic disease,none,joint,6 to 8,no,9 months,no,yes,yes,non-chronic disease,normal delivery,negative,negative
+531,32.0,5.0,village,high school,married,housewife,none,high school,none,none,nuclear,9 or more,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,positive
+532,30.0,4.0,village,high school,married,housewife,none,high school,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+533,25.0,2.0,village,high school,married,housewife,less than 5000,high school,chronic disease,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,chronic disease,normal delivery,positive,negative
+535,25.0,3.0,village,high school,married,housewife,none,high school,none,none,nuclear,2 to 5,no,9 months,yes,no,yes,none,normal delivery,negative,negative
+537,30.0,3.0,village,high school,married,housewife,none,high school,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+538,25.0,1.0,village,high school,married,housewife,none,high school,none,none,joint,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+539,30.0,3.0,village,primary school,married,housewife,5000 to 10000,primary school,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+540,25.0,2.0,city,high school,married,other,more than 30000,high school,chronic disease,none,nuclear,6 to 8,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+541,33.0,5.0,village,college,married,housewife,none,college,chronic disease,still-born delivery,nuclear,2 to 5,no,9 months,no,no,yes,non-chronic disease,caesarean section,negative,positive
+542,34.0,3.0,village,college,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,no,yes,yes,none,caesarean section,negative,negative
+543,33.0,2.0,village,college,married,other,more than 30000,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+544,22.0,1.0,city,college,married,student,5000 to 10000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,positive
+545,40.0,5.0,village,primary school,married,housewife,none,primary school,chronic disease,still-born delivery,joint,6 to 8,no,10 months,no,no,yes,non-chronic disease,caesarean section,negative,positive
+547,20.0,1.0,city,college,married,student,none,college,none,none,joint,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+548,30.0,2.0,city,primary school,married,housewife,none,primary school,none,none,joint,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+550,30.0,2.0,village,primary school,married,housewife,none,primary school,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,negative,positive
+551,25.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+552,28.0,2.0,village,primary school,married,housewife,none,high school,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+553,29.0,3.0,city,college,married,housewife,5000 to 10000,college,chronic disease,miscarriage,joint,6 to 8,no,10 months,yes,yes,yes,chronic disease,normal delivery,negative,positive
+554,21.0,1.0,city,college,married,housewife,none,college,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+555,25.0,3.0,village,high school,married,other,less than 5000,high school,none,none,nuclear,2 to 5,no,8 months,no,yes,no,non-chronic disease,caesarean section,negative,positive
+556,26.0,1.0,village,high school,married,housewife,none,high school,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,positive,negative
+557,28.0,2.0,village,university,married,other,10000 to 20000,university,none,none,nuclear,2 to 5,no,8 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+558,25.0,2.0,village,college,married,student,none,college,chronic disease,miscarriage,joint,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+559,22.0,1.0,city,college,married,housewife,none,college,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+560,24.0,2.0,village,high school,married,housewife,less than 5000,college,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+561,27.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+563,29.0,2.0,village,college,married,housewife,none,university,non-chronic disease,miscarriage,joint,9 or more,no,9 months,yes,yes,yes,none,caesarean section,positive,negative
+565,38.0,2.0,village,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+566,26.0,2.0,village,high school,married,housewife,none,university,chronic disease,still-born delivery,joint,2 to 5,no,8 months,yes,no,yes,non-chronic disease,caesarean section,positive,negative
+567,38.0,3.0,village,college,married,housewife,none,high school,non-chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,positive,negative
+568,24.0,3.0,village,primary school,married,housewife,none,high school,none,none,nuclear,2 to 5,no,10 months,no,no,yes,non-chronic disease,normal delivery,negative,negative
+569,24.0,1.0,city,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+570,22.0,1.0,village,high school,married,housewife,none,high school,none,none,joint,6 to 8,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+571,29.0,1.0,city,university,married,other,more than 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+573,21.0,2.0,city,college,married,student,none,university,none,miscarriage,joint,6 to 8,yes,9 months,yes,yes,yes,chronic disease,caesarean section,positive,positive
+574,26.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+576,29.0,1.0,city,university,married,business,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+577,23.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,no,none,caesarean section,negative,negative
+578,31.0,1.0,city,university,married,housewife,none,university,non-chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+579,30.0,1.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,yes,10 months,no,yes,yes,none,caesarean section,negative,positive
+580,26.0,2.0,city,university,married,student,none,university,non-chronic disease,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+582,28.0,1.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,chronic disease,normal delivery,negative,positive
+584,33.0,2.0,city,university,married,housewife,20000 to 30000,university,non-chronic disease,miscarriage,joint,6 to 8,no,7 months,yes,yes,no,non-chronic disease,caesarean section,positive,negative
+585,36.0,5.0,village,college,married,housewife,none,university,none,miscarriage,nuclear,6 to 8,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+586,28.0,1.0,city,university,married,other,20000 to 30000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+587,25.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,no,none,caesarean section,negative,negative
+588,27.0,2.0,city,university,married,teacher,20000 to 30000,university,non-chronic disease,none,nuclear,2 to 5,no,9 months,no,yes,no,none,normal delivery,negative,negative
+589,29.0,3.0,city,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,normal delivery,negative,negative
+592,31.0,3.0,city,university,married,student,5000 to 10000,university,non-chronic disease,miscarriage,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+593,25.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,joint,9 or more,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+594,18.0,1.0,city,college,married,housewife,none,high school,none,none,nuclear,6 to 8,no,10 months,yes,yes,yes,none,normal delivery,negative,positive
+595,28.0,2.0,village,university,married,service,5000 to 10000,university,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+597,33.0,1.0,city,university,married,housewife,none,university,chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+598,24.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+599,22.0,1.0,village,college,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+600,28.0,1.0,city,university,married,doctor,20000 to 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+601,23.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,no,yes,yes,none,caesarean section,positive,negative
+602,22.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+603,24.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+604,29.0,1.0,city,university,married,teacher,5000 to 10000,college,chronic disease,none,nuclear,2 to 5,yes,9 months,no,no,no,chronic disease,caesarean section,negative,negative
+605,27.0,1.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,caesarean section,negative,negative
+606,18.0,1.0,city,high school,married,student,none,university,non-chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+607,31.0,3.0,city,university,married,housewife,none,university,non-chronic disease,none,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,normal delivery,negative,negative
+608,30.0,3.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,no,chronic disease,caesarean section,negative,positive
+609,26.0,1.0,village,university,married,housewife,none,high school,none,none,joint,2 to 5,yes,10 months,yes,yes,no,none,caesarean section,negative,negative
+610,29.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,nuclear,2 to 5,yes,less than 5 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+613,33.0,1.0,city,university,married,teacher,less than 5000,university,none,none,joint,9 or more,no,9 months,yes,yes,no,none,caesarean section,negative,positive
+616,31.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,less than 5 months,yes,yes,yes,none,caesarean section,negative,negative
+617,22.0,1.0,city,university,married,student,less than 5000,university,chronic disease,none,joint,2 to 5,no,10 months,no,yes,yes,chronic disease,caesarean section,positive,positive
+618,26.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,no,yes,none,normal delivery,negative,negative
+619,26.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,positive
+620,28.0,2.0,city,university,married,housewife,none,university,chronic disease,none,joint,9 or more,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,positive,negative
+621,33.0,1.0,city,university,married,teacher,20000 to 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+622,22.0,1.0,city,high school,married,housewife,none,high school,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,caesarean section,positive,negative
+623,24.0,1.0,city,university,married,other,10000 to 20000,university,none,miscarriage,joint,9 or more,yes,10 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+624,23.0,1.0,village,university,married,housewife,none,university,none,none,joint,6 to 8,no,7 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+625,31.0,1.0,city,university,married,teacher,20000 to 30000,university,none,none,joint,6 to 8,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+627,33.0,3.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,positive
+628,30.0,1.0,city,university,married,teacher,20000 to 30000,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,no,none,caesarean section,positive,positive
+629,31.0,2.0,city,university,married,service,10000 to 20000,university,chronic disease,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+632,28.0,1.0,village,university,married,other,5000 to 10000,university,none,none,joint,6 to 8,no,10 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+635,30.0,1.0,village,university,married,housewife,none,college,chronic disease,none,joint,2 to 5,yes,less than 5 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+636,29.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+637,26.0,1.0,city,university,married,housewife,none,university,chronic disease,none,joint,2 to 5,yes,10 months,yes,yes,yes,chronic disease,caesarean section,positive,negative
+638,29.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+640,27.0,3.0,city,college,married,housewife,none,college,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,no,chronic disease,normal delivery,negative,negative
+642,32.0,3.0,city,university,married,service,10000 to 20000,university,none,miscarriage,joint,6 to 8,no,9 months,no,yes,no,chronic disease,caesarean section,negative,negative
+643,30.0,4.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,10 months,no,yes,no,none,normal delivery,negative,negative
+644,27.0,1.0,village,university,married,housewife,5000 to 10000,university,none,none,nuclear,2 to 5,no,less than 5 months,no,yes,yes,non-chronic disease,caesarean section,negative,negative
+645,34.0,3.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+646,29.0,2.0,city,university,married,housewife,5000 to 10000,university,none,none,joint,6 to 8,no,10 months,no,yes,no,none,normal delivery,negative,negative
+648,24.0,1.0,village,college,married,housewife,none,university,non-chronic disease,none,joint,2 to 5,no,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+652,29.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,no,yes,yes,non-chronic disease,normal delivery,positive,negative
+653,25.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,chronic disease,normal delivery,negative,positive
+654,22.0,2.0,village,college,married,housewife,none,college,none,miscarriage,joint,6 to 8,yes,8 months,yes,yes,no,none,normal delivery,negative,negative
+655,28.0,2.0,city,high school,married,housewife,none,high school,none,none,joint,9 or more,no,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+657,25.0,1.0,city,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,no,yes,yes,none,normal delivery,negative,negative
+659,32.0,3.0,city,university,married,other,20000 to 30000,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,positive,negative
+661,27.0,2.0,city,college,married,other,less than 5000,college,non-chronic disease,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+662,22.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+663,25.0,3.0,city,college,married,housewife,none,college,none,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+664,29.0,1.0,village,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,none,normal delivery,negative,negative
+665,27.0,1.0,city,university,married,teacher,less than 5000,university,non-chronic disease,none,joint,9 or more,yes,10 months,no,yes,yes,non-chronic disease,caesarean section,negative,positive
+667,25.0,1.0,city,university,married,service,5000 to 10000,university,none,none,nuclear,2 to 5,yes,10 months,yes,no,yes,non-chronic disease,caesarean section,negative,positive
+668,33.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+670,34.0,2.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,normal delivery,negative,negative
+673,26.0,2.0,city,university,married,student,none,college,none,none,joint,9 or more,no,9 months,no,no,yes,chronic disease,caesarean section,negative,negative
+674,29.0,1.0,city,university,married,housewife,none,college,none,none,joint,2 to 5,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+675,25.0,2.0,city,college,married,housewife,5000 to 10000,university,chronic disease,miscarriage,nuclear,2 to 5,yes,less than 5 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+676,32.0,2.0,city,university,married,housewife,5000 to 10000,university,none,none,joint,2 to 5,yes,9 months,no,yes,no,none,caesarean section,negative,negative
+678,33.0,2.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+679,25.0,2.0,city,college,married,housewife,none,university,chronic disease,miscarriage,nuclear,2 to 5,no,less than 5 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+681,22.0,1.0,city,university,married,teacher,5000 to 10000,university,non-chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+683,37.0,2.0,city,university,married,service,20000 to 30000,university,chronic disease,none,nuclear,2 to 5,no,9 months,no,yes,no,chronic disease,normal delivery,negative,negative
+684,27.0,1.0,city,university,married,teacher,5000 to 10000,university,chronic disease,none,joint,2 to 5,no,7 months,no,yes,no,none,caesarean section,negative,negative
+685,29.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,no,non-chronic disease,caesarean section,negative,negative
+686,24.0,2.0,city,university,married,housewife,none,college,chronic disease,none,joint,2 to 5,yes,6 months,no,no,yes,non-chronic disease,caesarean section,negative,positive
+687,35.0,3.0,city,university,married,housewife,none,university,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+688,33.0,2.0,city,university,married,service,5000 to 10000,university,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+689,31.0,2.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+690,30.0,1.0,city,university,married,service,10000 to 20000,university,none,none,nuclear,2 to 5,yes,less than 5 months,yes,yes,no,chronic disease,caesarean section,positive,positive
+691,31.0,1.0,city,university,married,service,20000 to 30000,university,non-chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+694,27.0,1.0,village,university,married,housewife,none,university,non-chronic disease,none,joint,2 to 5,no,10 months,no,yes,yes,chronic disease,caesarean section,negative,positive
+695,25.0,2.0,village,college,married,teacher,less than 5000,college,none,miscarriage,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+696,28.0,1.0,city,university,married,doctor,5000 to 10000,university,none,none,joint,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+698,28.0,1.0,village,high school,married,housewife,none,college,non-chronic disease,none,nuclear,2 to 5,no,9 months,no,yes,yes,non-chronic disease,normal delivery,negative,negative
+700,23.0,2.0,village,university,married,housewife,none,university,chronic disease,none,joint,6 to 8,no,10 months,no,yes,yes,none,caesarean section,positive,negative
+701,30.0,2.0,village,university,married,service,10000 to 20000,university,none,miscarriage,joint,6 to 8,no,7 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+702,25.0,2.0,village,university,married,teacher,5000 to 10000,university,none,none,joint,9 or more,no,10 months,yes,yes,yes,none,normal delivery,negative,negative
+703,26.0,2.0,village,university,married,student,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+704,22.0,2.0,village,university,married,housewife,none,university,chronic disease,none,joint,6 to 8,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+705,29.0,1.0,city,university,married,teacher,5000 to 10000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+706,36.0,4.0,village,university,married,housewife,none,university,none,still-born delivery,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,positive
+708,30.0,1.0,city,university,married,doctor,20000 to 30000,university,none,none,joint,2 to 5,yes,10 months,yes,yes,no,none,caesarean section,negative,negative
+709,31.0,1.0,city,university,married,housewife,none,university,non-chronic disease,none,joint,6 to 8,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+710,26.0,2.0,city,university,married,service,5000 to 10000,university,none,miscarriage,joint,2 to 5,yes,10 months,no,yes,no,non-chronic disease,caesarean section,positive,negative
+711,19.0,1.0,village,college,married,student,none,university,none,none,joint,6 to 8,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+712,27.0,1.0,village,university,married,housewife,none,college,none,none,joint,9 or more,no,10 months,yes,yes,no,none,caesarean section,positive,negative
+713,27.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,8 months,yes,yes,no,none,normal delivery,negative,positive
+714,30.0,2.0,city,college,married,housewife,20000 to 30000,university,chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+715,28.0,1.0,village,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,positive
+716,22.0,2.0,village,college,married,housewife,none,college,non-chronic disease,still-born delivery,joint,6 to 8,no,9 months,yes,yes,yes,none,normal delivery,positive,negative
+717,31.0,1.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,chronic disease,caesarean section,negative,negative
+719,29.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+722,27.0,1.0,city,university,married,student,10000 to 20000,university,none,none,joint,6 to 8,yes,9 months,no,no,yes,none,caesarean section,positive,positive
+724,23.0,2.0,village,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+725,30.0,2.0,city,university,married,service,20000 to 30000,university,none,none,joint,6 to 8,yes,9 months,yes,yes,yes,non-chronic disease,normal delivery,positive,positive
+726,23.0,1.0,city,university,married,student,less than 5000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,positive,positive
+727,22.0,1.0,city,university,married,housewife,none,university,none,none,joint,6 to 8,no,10 months,no,yes,yes,none,caesarean section,negative,negative
+728,31.0,1.0,city,college,married,housewife,5000 to 10000,university,chronic disease,none,nuclear,2 to 5,yes,8 months,no,yes,yes,non-chronic disease,normal delivery,negative,positive
+730,25.0,1.0,city,university,married,housewife,none,university,none,miscarriage,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+731,22.0,1.0,village,university,married,student,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+732,32.0,2.0,city,university,married,service,more than 30000,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+733,32.0,1.0,city,university,married,service,more than 30000,university,none,none,joint,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+734,28.0,1.0,city,university,married,business,more than 30000,university,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,normal delivery,negative,negative
+735,31.0,2.0,city,university,married,housewife,none,university,non-chronic disease,miscarriage,joint,9 or more,yes,9 months,no,yes,no,non-chronic disease,normal delivery,positive,negative
+737,30.0,2.0,city,university,married,service,more than 30000,university,none,still-born delivery,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+738,25.0,1.0,city,university,married,student,more than 30000,university,none,none,nuclear,2 to 5,no,10 months,no,yes,no,none,caesarean section,negative,negative
+739,30.0,1.0,city,university,married,other,more than 30000,university,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+742,26.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+743,26.0,1.0,village,university,married,student,none,university,none,none,nuclear,2 to 5,yes,10 months,no,yes,yes,chronic disease,normal delivery,negative,negative
+745,31.0,1.0,city,university,married,service,more than 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+748,25.0,1.0,village,university,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,yes,none,caesarean section,negative,negative
+749,22.0,3.0,city,high school,married,housewife,10000 to 20000,high school,chronic disease,none,joint,6 to 8,no,9 months,yes,no,yes,chronic disease,normal delivery,negative,negative
+750,20.0,1.0,village,primary school,married,housewife,5000 to 10000,primary school,none,none,joint,2 to 5,no,9 months,yes,yes,yes,chronic disease,normal delivery,negative,negative
+751,26.0,1.0,city,university,married,other,none,university,none,none,joint,2 to 5,yes,9 months,no,yes,no,none,caesarean section,negative,negative
+753,25.0,3.0,village,primary school,married,housewife,5000 to 10000,college,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,positive
+754,20.0,1.0,city,college,married,other,more than 30000,college,none,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+755,22.0,1.0,city,high school,married,housewife,10000 to 20000,college,none,none,nuclear,2 to 5,no,9 months,yes,yes,yes,none,normal delivery,negative,negative
+756,20.0,1.0,city,high school,married,housewife,10000 to 20000,college,non-chronic disease,none,joint,2 to 5,no,10 months,yes,yes,yes,chronic disease,normal delivery,negative,negative
+758,23.0,2.0,village,primary school,married,housewife,20000 to 30000,high school,chronic disease,still-born delivery,joint,6 to 8,no,10 months,yes,no,yes,non-chronic disease,caesarean section,negative,negative
+760,30.0,3.0,city,university,married,service,more than 30000,university,chronic disease,still-born delivery,nuclear,2 to 5,no,9 months,yes,yes,yes,chronic disease,caesarean section,negative,positive
+762,28.0,1.0,village,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,10 months,yes,yes,yes,chronic disease,caesarean section,negative,negative
+763,27.0,1.0,city,university,married,service,more than 30000,university,none,none,joint,2 to 5,no,9 months,yes,yes,no,chronic disease,caesarean section,negative,negative
+764,21.0,1.0,village,high school,married,housewife,none,primary school,none,none,joint,2 to 5,no,9 months,yes,no,no,none,normal delivery,negative,positive
+765,23.0,2.0,village,primary school,married,housewife,none,high school,none,none,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+767,29.0,4.0,village,primary school,married,housewife,none,high school,none,miscarriage,joint,6 to 8,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+768,22.0,1.0,village,college,married,student,none,university,none,none,joint,2 to 5,yes,9 months,yes,yes,no,none,normal delivery,negative,negative
+769,27.0,3.0,village,high school,married,housewife,none,none,none,none,joint,6 to 8,no,9 months,no,no,no,none,normal delivery,negative,negative
+770,23.0,1.0,village,high school,married,student,none,university,none,none,nuclear,2 to 5,no,9 months,no,yes,no,none,normal delivery,negative,negative
+771,35.0,3.0,village,primary school,married,housewife,none,high school,none,miscarriage,joint,9 or more,no,9 months,no,no,no,none,caesarean section,negative,negative
+772,18.0,1.0,village,primary school,married,housewife,none,none,none,none,joint,9 or more,no,9 months,no,no,no,none,normal delivery,negative,negative
+773,33.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+774,45.0,3.0,city,college,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,no,none,normal delivery,negative,negative
+775,22.0,2.0,village,primary school,married,housewife,none,primary school,none,none,nuclear,2 to 5,no,10 months,no,yes,no,none,normal delivery,negative,negative
+776,31.0,3.0,village,high school,married,housewife,none,primary school,none,miscarriage,joint,6 to 8,no,9 months,no,no,no,chronic disease,caesarean section,negative,negative
+777,18.0,1.0,village,none,married,housewife,none,college,none,none,nuclear,2 to 5,no,9 months,no,yes,no,none,normal delivery,negative,negative
+778,26.0,1.0,city,university,married,doctor,10000 to 20000,university,none,none,joint,6 to 8,yes,9 months,no,yes,no,none,caesarean section,negative,negative
+779,37.0,2.0,city,university,married,service,20000 to 30000,university,none,miscarriage,nuclear,2 to 5,yes,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+780,26.0,1.0,village,university,married,doctor,10000 to 20000,university,none,none,nuclear,2 to 5,yes,9 months,no,yes,yes,none,normal delivery,negative,positive
+781,22.0,1.0,village,high school,married,housewife,none,university,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,normal delivery,negative,negative
+782,26.0,1.0,city,university,married,student,5000 to 10000,university,non-chronic disease,none,nuclear,2 to 5,yes,9 months,yes,yes,yes,none,caesarean section,negative,negative
+783,25.0,1.0,city,university,married,student,none,university,none,none,joint,2 to 5,yes,9 months,no,yes,no,non-chronic disease,normal delivery,negative,negative
+785,25.0,1.0,city,university,married,housewife,none,university,none,none,joint,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,positive
+787,32.0,1.0,city,university,married,other,more than 30000,university,none,none,joint,2 to 5,no,8 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+788,26.0,1.0,city,university,married,housewife,none,university,chronic disease,miscarriage,nuclear,2 to 5,no,9 months,yes,yes,yes,non-chronic disease,caesarean section,negative,negative
+790,26.0,1.0,city,university,married,student,10000 to 20000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+791,26.0,1.0,city,university,married,service,20000 to 30000,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative
+792,22.0,1.0,city,college,married,student,none,university,non-chronic disease,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,caesarean section,negative,negative
+793,33.0,3.0,village,primary school,married,housewife,none,primary school,none,none,nuclear,6 to 8,no,10 months,no,no,no,none,normal delivery,negative,negative
+794,24.0,1.0,village,college,married,housewife,none,university,none,none,nuclear,2 to 5,no,10 months,yes,yes,no,none,normal delivery,negative,negative
+795,22.0,1.0,village,college,married,housewife,none,university,non-chronic disease,miscarriage,joint,2 to 5,no,9 months,yes,yes,yes,none,caesarean section,negative,negative
+796,34.0,3.0,city,university,married,housewife,none,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,none,caesarean section,negative,negative
+797,25.0,2.0,city,high school,married,housewife,none,primary school,none,none,nuclear,2 to 5,no,8 months,yes,yes,yes,none,caesarean section,negative,negative
+798,21.0,2.0,city,primary school,married,housewife,none,none,none,none,nuclear,2 to 5,no,9 months,yes,yes,no,none,caesarean section,negative,negative
+799,33.0,1.0,city,university,married,teacher,10000 to 20000,university,none,none,nuclear,2 to 5,yes,9 months,yes,yes,no,non-chronic disease,caesarean section,negative,negative

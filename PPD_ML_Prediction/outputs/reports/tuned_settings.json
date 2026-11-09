@@ -1,0 +1,30 @@
+{
+  "winner": "SVM",
+  "models": {
+    "Logistic Regression": {
+      "model__C": 0.03
+    },
+    "Random Forest": {
+      "model__n_estimators": 100,
+      "model__min_samples_leaf": 6,
+      "model__max_features": "sqrt",
+      "model__max_depth": 8
+    },
+    "SVM": {
+      "model__gamma": 0.1,
+      "model__C": 0.3
+    },
+    "XGBoost": {
+      "model__subsample": 0.8,
+      "model__n_estimators": 60,
+      "model__max_depth": 4,
+      "model__learning_rate": 0.03
+    },
+    "LightGBM": {
+      "model__num_leaves": 15,
+      "model__n_estimators": 150,
+      "model__min_child_samples": 25,
+      "model__learning_rate": 0.03
+    }
+  }
+}
