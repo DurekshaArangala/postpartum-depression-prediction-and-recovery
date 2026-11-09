@@ -1,0 +1,10 @@
+{
+  "model": "SVM",
+  "predicted_screening_class": "Low",
+  "probability_high": 0.21990771873143097,
+  "class_probabilities": {
+    "Low": 0.5538002488124466,
+    "Medium": 0.22629203245612248,
+    "High": 0.21990771873143097
+  }
+}

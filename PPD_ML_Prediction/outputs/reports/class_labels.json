@@ -1,0 +1,18 @@
+{
+  "target": "EPDS Result",
+  "class_ids_in_probability_order": [
+    0,
+    1,
+    2
+  ],
+  "class_labels_in_probability_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "probability_columns": [
+    "probability_low",
+    "probability_medium",
+    "probability_high"
+  ]
+}

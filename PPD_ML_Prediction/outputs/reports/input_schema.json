@@ -1,0 +1,113 @@
+{
+  "numeric_ranges": {
+    "Age": [
+      13,
+      45
+    ],
+    "Number of the latest pregnancy": [
+      1,
+      7
+    ]
+  },
+  "categories": {
+    "Residence": [
+      "city",
+      "village"
+    ],
+    "Education Level": [
+      "college",
+      "high school",
+      "none",
+      "primary school",
+      "university"
+    ],
+    "Marital status": [
+      "divorced",
+      "married"
+    ],
+    "Occupation before latest pregnancy": [
+      "business",
+      "doctor",
+      "housewife",
+      "other",
+      "service",
+      "student",
+      "teacher"
+    ],
+    "Monthly income before latest pregnancy": [
+      "10000 to 20000",
+      "20000 to 30000",
+      "5000 to 10000",
+      "less than 5000",
+      "more than 30000",
+      "none"
+    ],
+    "Husband's education level": [
+      "college",
+      "high school",
+      "none",
+      "primary school",
+      "university"
+    ],
+    "Disease before pregnancy": [
+      "chronic disease",
+      "non-chronic disease",
+      "none"
+    ],
+    "History of pregnancy loss": [
+      "miscarriage",
+      "none",
+      "still-born delivery"
+    ],
+    "Family type": [
+      "joint",
+      "nuclear"
+    ],
+    "Number of household members": [
+      "2 to 5",
+      "6 to 8",
+      "9 or more"
+    ],
+    "Major changes or losses during pregnancy": [
+      "no",
+      "yes"
+    ],
+    "Pregnancy length": [
+      "10 months",
+      "6 months",
+      "7 months",
+      "8 months",
+      "9 months",
+      "less than 5 months"
+    ],
+    "Pregnancy plan": [
+      "no",
+      "yes"
+    ],
+    "Regular checkups": [
+      "no",
+      "yes"
+    ],
+    "Fear of pregnancy": [
+      "no",
+      "yes"
+    ],
+    "Diseases during pregnancy": [
+      "chronic disease",
+      "non-chronic disease",
+      "none"
+    ],
+    "Mode of delivery": [
+      "caesarean section",
+      "normal delivery"
+    ],
+    "Depression before pregnancy": [
+      "negative",
+      "positive"
+    ],
+    "Depression during pregnancy": [
+      "negative",
+      "positive"
+    ]
+  }
+}

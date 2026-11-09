@@ -1,8 +1,0 @@
-{
-    "model_name": "SVM",
-    "target_column": "Feeling anxious",
-    "predicted_proxy_class": 1,
-    "predicted_proxy_probability": 0.9973485169553121,
-    "demonstration_band": "Higher proxy score band (demo only)",
-    "warning": "The current target is Feeling anxious, a symptom proxy. This model is not a validated PPD screening or diagnostic model."
-}
