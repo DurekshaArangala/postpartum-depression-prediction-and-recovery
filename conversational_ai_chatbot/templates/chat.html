@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7c3aed">
+
+    <title>MediAI | Medical Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div>
+                <h2>Liyaa</h2>
+                <span>Conversational AI</span>
+            </div>
+        </div>
+
+        <button class="new-chat-btn" id="newChatBtn">
+            <i class="fa-solid fa-plus"></i>
+            New Conversation
+        </button>
+
+        <div class="sidebar-section">
+            <p class="section-label">YOUR ASSISTANT</p>
+
+            <div class="sidebar-item active">
+                <i class="fa-regular fa-message"></i>
+                <span>Medical Chat</span>
+            </div>
+
+            <div class="sidebar-item">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Health Information</span>
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="privacy-note">
+                <i class="fa-solid fa-lock"></i>
+                <div>
+                    <strong>Private & Secure</strong>
+                    <small>Your conversations are handled securely.</small>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-avatar">M</div>
+                <div>
+                    <strong>Medical Assistant</strong>
+                    <small>AI Powered</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Chat Area -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="header-left">
+                <button class="icon-btn menu-btn" id="menuBtn"
+                        aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <h3>Medical Chat</h3>
+                    <span class="online-status">
+                        <span class="status-dot"></span>
+                        AI Assistant Online
+                    </span>
+                </div>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn" id="themeToggle"
+                        aria-label="Toggle dark and light mode"
+                        title="Change theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+
+                <button class="icon-btn" id="clearBtn"
+                        aria-label="Clear conversation"
+                        title="Clear conversation">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Chat Messages -->
+        <section class="chat-area" id="chatArea">
+
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+
+                <div class="welcome-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <div class="welcome-badge">
+                    <span class="status-dot"></span>
+                    YOUR AI HEALTH COMPANION
+                </div>
+
+                <h1>
+                    Your Health,<br>
+                    <span>Our Priority.</span>
+                </h1>
+
+                <p class="welcome-description">
+                    Hello! I'm MediAI, your AI-powered medical assistant.
+                    Ask me questions about health conditions, symptoms,
+                    medical information and general healthcare.
+                </p>
+
+                <div class="suggestion-heading">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    TRY ASKING ME
+                </div>
+
+                <div class="suggestion-grid">
+
+                    <button class="suggestion-card"
+                            data-question="What are the common symptoms of postpartum depression?">
+                        <div class="suggestion-icon lavender">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <strong>Health Conditions</strong>
+                            <small>Learn about health conditions</small>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </button>
+
+                    <button class="suggestion-card"
+                            data-question="What are the common causes of headaches?">
+                        <div class="suggestion-icon pink">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <strong>Symptoms & Causes</strong>
+                            <small>Understand symptoms and causes</small>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </button>
+
+                    <button class="suggestion-card"
+                            data-question="What are some general tips for maintaining good mental health?">
+                        <div class="suggestion-icon blue">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div>
+                            <strong>Mental Wellness</strong>
+                            <small>Explore mental wellness</small>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </button>
+
+                    <button class="suggestion-card"
+                            data-question="How can I maintain a healthy lifestyle?">
+                        <div class="suggestion-icon peach">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <strong>Healthy Lifestyle</strong>
+                            <small>Discover healthy habits</small>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Messages will be inserted here -->
+            <div class="messages-container" id="messagesContainer"></div>
+
+        </section>
+
+
+        <!-- Input Area -->
+        <footer class="chat-footer">
+
+            <form id="chatForm" class="input-wrapper">
+
+                <button type="button" class="input-icon"
+                        aria-label="Medical assistant">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <textarea
+                    id="userInput"
+                    placeholder="Ask me anything about your health..."
+                    rows="1"
+                    maxlength="3000"
+                    aria-label="Your message"
+                    required></textarea>
+
+                <button type="submit" class="send-btn"
+                        id="sendBtn" aria-label="Send message">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+
+            </form>
+
+            <p class="disclaimer">
+                <i class="fa-solid fa-shield-heart"></i>
+                MediAI provides general health information, not a medical diagnosis.
+                Always consult a qualified healthcare professional.
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script>
+    const body = document.body;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+
+    const chatForm = document.getElementById("chatForm");
+    const userInput = document.getElementById("userInput");
+    const messagesContainer = document.getElementById("messagesContainer");
+
+    const welcomeScreen = document.getElementById("welcomeScreen");
+    const sendBtn = document.getElementById("sendBtn");
+
+    let isWaiting = false;
+
+    // ------------------------------
+    // DARK / LIGHT THEME
+    // ------------------------------
+
+    function applyTheme(theme) {
+        body.setAttribute("data-theme", theme);
+
+        if (theme === "dark") {
+            themeIcon.className = "fa-solid fa-sun";
+            themeToggle.title = "Switch to light mode";
+        } else {
+            themeIcon.className = "fa-solid fa-moon";
+            themeToggle.title = "Switch to dark mode";
+        }
+
+        localStorage.setItem("mediai-theme", theme);
+    }
+
+    const savedTheme = localStorage.getItem("mediai-theme") || "light";
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener("click", () => {
+        const currentTheme = body.getAttribute("data-theme");
+        applyTheme(currentTheme === "dark" ? "light" : "dark");
+    });
+
+
+    // ------------------------------
+    // MOBILE SIDEBAR
+    // ------------------------------
+
+    document.getElementById("menuBtn").addEventListener("click", () => {
+        document.getElementById("sidebar").classList.toggle("sidebar-open");
+    });
+
+
+    // ------------------------------
+    // DISPLAY MESSAGES
+    // ------------------------------
+
+    function addMessage(message, sender) {
+
+        welcomeScreen.style.display = "none";
+
+        const messageRow = document.createElement("div");
+        messageRow.className = `message-row ${sender}`;
+
+        const avatar = document.createElement("div");
+        avatar.className = "message-avatar";
+
+        const avatarIcon = document.createElement("i");
+        avatarIcon.className = sender === "bot"
+            ? "fa-solid fa-heart-pulse"
+            : "fa-solid fa-user";
+
+        avatar.appendChild(avatarIcon);
+
+        const bubble = document.createElement("div");
+        bubble.className = "message-bubble";
+
+        const senderName = document.createElement("span");
+        senderName.className = "sender-name";
+        senderName.textContent = sender === "bot" ? "MediAI" : "You";
+
+        const messageText = document.createElement("p");
+        messageText.className = "message-text";
+        messageText.textContent = message;
+
+        bubble.appendChild(senderName);
+        bubble.appendChild(messageText);
+
+        messageRow.appendChild(avatar);
+        messageRow.appendChild(bubble);
+
+        messagesContainer.appendChild(messageRow);
+
+        document.getElementById("chatArea").scrollTop =
+            document.getElementById("chatArea").scrollHeight;
+    }
+
+
+    // ------------------------------
+    // TYPING INDICATOR
+    // ------------------------------
+
+    function showTyping() {
+
+        const typing = document.createElement("div");
+        typing.className = "message-row bot";
+        typing.id = "typingIndicator";
+
+        typing.innerHTML = `
+            <div class="message-avatar">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <div class="typing-bubble">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        `;
+
+        messagesContainer.appendChild(typing);
+
+        document.getElementById("chatArea").scrollTop =
+            document.getElementById("chatArea").scrollHeight;
+    }
+
+    function removeTyping() {
+        const typing = document.getElementById("typingIndicator");
+        if (typing) typing.remove();
+    }
+
+
+    // ------------------------------
+    // SEND MESSAGE TO FLASK BACKEND
+    // ------------------------------
+
+    async function sendMessage(message) {
+
+        if (!message.trim() || isWaiting) return;
+
+        isWaiting = true;
+        sendBtn.disabled = true;
+
+        addMessage(message, "user");
+
+        userInput.value = "";
+        userInput.style.height = "auto";
+
+        showTyping();
+
+        try {
+
+            const response = await fetch("/get", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams({
+                    msg: message
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error("Server error: " + response.status);
+            }
+
+            const result = await response.text();
+
+            let answer = result;
+
+            // Supports both plain-text and JSON Flask responses.
+            try {
+                const parsed = JSON.parse(result);
+
+                if (typeof parsed === "string") {
+                    answer = parsed;
+                } else {
+                    answer = parsed.response || parsed.answer || parsed.message || result;
+                }
+            } catch (error) {
+                answer = result;
+            }
+
+            removeTyping();
+            addMessage(answer, "bot");
+
+        } catch (error) {
+
+            removeTyping();
+
+            addMessage(
+                "I'm sorry, I couldn't connect to the medical assistant. Please check that the Flask server is running and try again.",
+                "bot"
+            );
+
+            console.error(error);
+
+        } finally {
+
+            isWaiting = false;
+            sendBtn.disabled = false;
+            userInput.focus();
+
+        }
+    }
+
+
+    // ------------------------------
+    // FORM SUBMISSION
+    // ------------------------------
+
+    chatForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        sendMessage(userInput.value);
+    });
+
+
+    // Enter to send, Shift + Enter for new line
+    userInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            chatForm.requestSubmit();
+        }
+    });
+
+
+    // Auto resize textarea
+    userInput.addEventListener("input", () => {
+        userInput.style.height = "auto";
+        userInput.style.height =
+            Math.min(userInput.scrollHeight, 120) + "px";
+    });
+
+
+    // ------------------------------
+    // SUGGESTED QUESTIONS
+    // ------------------------------
+
+    document.querySelectorAll(".suggestion-card").forEach(card => {
+
+        card.addEventListener("click", () => {
+            const question = card.dataset.question;
+            sendMessage(question);
+        });
+
+    });
+
+
+    // ------------------------------
+    // NEW CHAT / CLEAR CHAT
+    // ------------------------------
+
+    function clearChat() {
+        if (isWaiting) return;
+
+        messagesContainer.innerHTML = "";
+        welcomeScreen.style.display = "flex";
+        userInput.value = "";
+        userInput.focus();
+    }
+
+    document.getElementById("newChatBtn").addEventListener("click", clearChat);
+    document.getElementById("clearBtn").addEventListener("click", clearChat);
+
+</script>
+
+</body>
+</html>
