@@ -1,0 +1,5 @@
+The model gave this record a 50.5% probability of the High EPDS screening category.
+The average High probability in the reference group was 45.5%.
+Fear of pregnancy moved the model's High probability up by 5.7 percentage points.
+Diseases during pregnancy moved the model's High probability down by 5.2 percentage points.
+Pregnancy length moved the model's High probability up by 4.9 percentage points.
