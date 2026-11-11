@@ -1,8 +1,9 @@
+
 import 'package:flutter/material.dart';
 
 import '../theme/liyaa_theme.dart';
 
-/// Illustration from assets/images. Shows a soft icon if the file is missing.
+/// Permanent soft illustration placeholder.
 class LiyaaArt extends StatelessWidget {
   const LiyaaArt(
     this.file, {
@@ -24,22 +25,18 @@ class LiyaaArt extends StatelessWidget {
     return SizedBox(
       height: height,
       width: double.infinity,
-      child: Image.asset(
-        'assets/images/$file',
-        fit: fit,
-        errorBuilder: (_, __, ___) => Center(
-          child: Icon(
-            fallbackIcon,
-            size: iconSize,
-            color: LiyaaColors.pink.withAlpha(150),
-          ),
+      child: Center(
+        child: Icon(
+          fallbackIcon,
+          size: iconSize,
+          color: LiyaaColors.pink.withAlpha(150),
         ),
       ),
     );
   }
 }
 
-/// Small icon from assets/icons. Falls back to a Material icon if missing.
+/// Permanent Material icon placeholder.
 class LiyaaGlyph extends StatelessWidget {
   const LiyaaGlyph(
     this.file, {
@@ -56,12 +53,10 @@ class LiyaaGlyph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      'assets/icons/$file',
-      width: size,
-      height: size,
-      fit: BoxFit.contain,
-      errorBuilder: (_, __, ___) => Icon(fallback, size: size, color: color),
+    return Icon(
+      fallback,
+      size: size,
+      color: color,
     );
   }
 }
@@ -91,11 +86,15 @@ class ArtCard extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(28),
       ),
-      child: LiyaaArt(file, fallbackIcon: fallbackIcon),
+      child: LiyaaArt(
+        file,
+        fallbackIcon: fallbackIcon,
+      ),
     );
   }
 }
 
+/// Scrollable page with consistent spacing.
 class PageBody extends StatelessWidget {
   const PageBody({
     super.key,
@@ -121,6 +120,7 @@ class PageBody extends StatelessWidget {
   }
 }
 
+/// Main screen title with optional subtitle.
 class ScreenTitle extends StatelessWidget {
   const ScreenTitle(
     this.text, {
@@ -168,6 +168,7 @@ class ScreenTitle extends StatelessWidget {
   }
 }
 
+/// Smaller section heading.
 class SectionTitle extends StatelessWidget {
   const SectionTitle(this.text, {super.key});
 
@@ -209,14 +210,16 @@ class TintCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(22),
-        border: bordered ? Border.all(color: LiyaaColors.line, width: 1.2) : null,
+        border: bordered
+            ? Border.all(color: LiyaaColors.line, width: 1.2)
+            : null,
       ),
       child: child,
     );
   }
 }
 
-/// Coloured square with a white glyph (like Happy / Calm / Relax).
+/// Coloured square with a Material icon.
 class GlyphTile extends StatelessWidget {
   const GlyphTile({
     super.key,
@@ -241,12 +244,16 @@ class GlyphTile extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(size * 0.32),
       ),
-      child: LiyaaGlyph(glyph, fallback: fallback, size: size * 0.52),
+      child: LiyaaGlyph(
+        glyph,
+        fallback: fallback,
+        size: size * 0.52,
+      ),
     );
   }
 }
 
-/// Tappable tile with a label underneath.
+/// Tappable feeling tile with a label underneath.
 class FeelingTile extends StatelessWidget {
   const FeelingTile({
     super.key,
@@ -279,7 +286,11 @@ class FeelingTile extends StatelessWidget {
                 width: 68,
                 height: 68,
                 child: Center(
-                  child: LiyaaGlyph(glyph, fallback: fallback, size: 34),
+                  child: LiyaaGlyph(
+                    glyph,
+                    fallback: fallback,
+                    size: 34,
+                  ),
                 ),
               ),
             ),
@@ -289,7 +300,10 @@ class FeelingTile extends StatelessWidget {
             label,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 14, color: LiyaaColors.plum),
+            style: const TextStyle(
+              fontSize: 14,
+              color: LiyaaColors.plum,
+            ),
           ),
         ],
       ),
@@ -297,7 +311,7 @@ class FeelingTile extends StatelessWidget {
   }
 }
 
-/// Card like "Peer Group Meetup": title, text, pink action, icon on the right.
+/// Card with title, description, action, and icon.
 class TaskCard extends StatelessWidget {
   const TaskCard({
     super.key,
@@ -376,7 +390,12 @@ class TaskCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 14),
-              LiyaaGlyph(glyph, fallback: fallback, size: 72, color: accent),
+              LiyaaGlyph(
+                glyph,
+                fallback: fallback,
+                size: 72,
+                color: accent,
+              ),
             ],
           ),
         ),
@@ -385,6 +404,7 @@ class TaskCard extends StatelessWidget {
   }
 }
 
+/// Selectable answer option.
 class OptionTile extends StatelessWidget {
   const OptionTile({
     super.key,
@@ -415,7 +435,10 @@ class OptionTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(18),
           onTap: onTap,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 18,
+              vertical: 16,
+            ),
             child: Row(
               children: [
                 AnimatedContainer(
@@ -424,21 +447,32 @@ class OptionTile extends StatelessWidget {
                   height: 26,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: selected ? LiyaaColors.pink : Colors.transparent,
+                    color: selected
+                        ? LiyaaColors.pink
+                        : Colors.transparent,
                     border: Border.all(
-                      color: selected ? LiyaaColors.pink : LiyaaColors.pinkLight,
+                      color: selected
+                          ? LiyaaColors.pink
+                          : LiyaaColors.pinkLight,
                       width: 1.6,
                     ),
                   ),
                   child: selected
-                      ? const Icon(Icons.check, size: 16, color: Colors.white)
+                      ? const Icon(
+                          Icons.check,
+                          size: 16,
+                          color: Colors.white,
+                        )
                       : null,
                 ),
                 const SizedBox(width: 14),
                 Expanded(
                   child: Text(
                     text,
-                    style: const TextStyle(fontSize: 18, height: 1.3),
+                    style: const TextStyle(
+                      fontSize: 18,
+                      height: 1.3,
+                    ),
                   ),
                 ),
               ],
@@ -450,6 +484,7 @@ class OptionTile extends StatelessWidget {
   }
 }
 
+/// Selector for a 1–5 rating scale.
 class ScaleSelector extends StatelessWidget {
   const ScaleSelector({
     super.key,
@@ -459,7 +494,7 @@ class ScaleSelector extends StatelessWidget {
   });
 
   final List<String> labels;
-  final int value; // 1..5
+  final int value;
   final ValueChanged<int> onChanged;
 
   @override
@@ -469,6 +504,7 @@ class ScaleSelector extends StatelessWidget {
       runSpacing: 8,
       children: List.generate(labels.length, (i) {
         final selected = value == i + 1;
+
         return ChoiceChip(
           label: Text(labels[i]),
           selected: selected,
@@ -478,15 +514,24 @@ class ScaleSelector extends StatelessWidget {
           selectedColor: LiyaaColors.pink,
           labelStyle: TextStyle(
             fontSize: 16,
-            fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
-            color: selected ? Colors.white : LiyaaColors.plum,
+            fontWeight: selected
+                ? FontWeight.w700
+                : FontWeight.w500,
+            color: selected
+                ? Colors.white
+                : LiyaaColors.plum,
           ),
           side: BorderSide(
-            color: selected ? LiyaaColors.pink : LiyaaColors.line,
+            color: selected
+                ? LiyaaColors.pink
+                : LiyaaColors.line,
             width: 1.2,
           ),
           shape: const StadiumBorder(),
-          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 6,
+            vertical: 6,
+          ),
         );
       }),
     );

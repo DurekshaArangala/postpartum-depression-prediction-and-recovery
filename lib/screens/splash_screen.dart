@@ -44,14 +44,18 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   void _goNext() {
-    if (!mounted) return;
-    Navigator.pushReplacement(
-      context,
-      PageRouteBuilder(
-        transitionDuration: const Duration(milliseconds: 600),
-        pageBuilder: (_, __, ___) => const WelcomeScreen(),
-        transitionsBuilder: (_, animation, __, child) =>
-            FadeTransition(opacity: animation, child: child),
+    debugPrint('Splash: navigation function called');
+
+    if (!mounted) {
+      debugPrint('Splash: widget is not mounted');
+      return;
+    }
+
+    debugPrint('Splash: navigating to WelcomeScreen');
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (context) => const WelcomeScreen(),
       ),
     );
   }
