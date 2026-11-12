@@ -5,7 +5,9 @@ import '../state/app_state.dart';
 import '../theme/liyaa_theme.dart';
 import '../widgets/score_ring.dart';
 import '../widgets/ui.dart';
+
 import 'main_shell.dart';
+import 'ml_questionnaire_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
@@ -182,8 +184,8 @@ class ResultScreen extends StatelessWidget {
           const Text(
             'EPDS scores support screening and '
             'discussion with a healthcare professional. '
-            'ML predictions are not shown because '
-            'they require clinical validation.',
+            'The optional ML assessment is experimental '
+            'and has not been clinically validated.',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 13,
@@ -191,6 +193,78 @@ class ResultScreen extends StatelessWidget {
               color: LiyaaColors.plumSoft,
             ),
           ),
+
+          // Do not place an optional questionnaire ahead
+          // of urgent support guidance when Q10 is flagged.
+          if (!s.safetyFlag) ...[
+            const SizedBox(height: 8),
+
+            TintCard(
+              color: LiyaaColors.lavenderSoft,
+              padding: const EdgeInsets.all(18),
+              child: Column(
+                crossAxisAlignment:
+                    CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Optional Background Assessment',
+                    style: TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  const Text(
+                    'Answer 21 questions about your '
+                    'background and pregnancy history '
+                    'to explore how our experimental '
+                    'machine-learning model works.',
+                    style: TextStyle(
+                      fontSize: 15,
+                      height: 1.45,
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  const Text(
+                    'This prediction is for research '
+                    'demonstration only. It cannot '
+                    'diagnose postpartum depression '
+                    'or replace professional advice.',
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: LiyaaColors.plumSoft,
+                    ),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) =>
+                                const MlQuestionnaireScreen(),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Explore ML assessment',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+
+          const SizedBox(height: 12),
 
           FilledButton(
             onPressed: () {

@@ -5,6 +5,7 @@ import '../theme/liyaa_theme.dart';
 import '../widgets/ui.dart';
 import 'chat_screen.dart';
 import 'checkin_screen.dart';
+import 'ml_questionnaire_screen.dart';
 import 'progress_screen.dart';
 import 'support_screen.dart';
 
@@ -155,6 +156,25 @@ class HomeScreen extends StatelessWidget {
             fallback: Icons.chat_bubble_outline_rounded,
             onTap: () => _go(context, const ChatScreen()),
           ),
+          
+          const SectionTitle('AI Screening & Explainability'),
+          TaskCard(
+            title: 'Explore your background assessment',
+            text: 'Answer 21 questions about your background '
+            'and pregnancy history to explore our '
+            'experimental machine-learning screening model. '
+            'This is not a medical diagnosis.',
+            action: 'Start assessment',
+            color: LiyaaColors.lavenderSoft,
+            accent: LiyaaColors.plum,
+            glyph: 'ill_result.png',
+            fallback: Icons.psychology_alt_outlined,
+            onTap: () => _go(
+              context,
+              const MlQuestionnaireScreen(),
+              ),
+            ),
+
 
           // this week
           TintCard(
