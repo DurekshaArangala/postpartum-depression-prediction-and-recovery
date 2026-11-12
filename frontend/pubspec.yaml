@@ -1,0 +1,31 @@
+name: liyaa_frontend
+description: Liyaa postpartum wellbeing Flutter frontend prototype
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^9.0.0
+  supabase_flutter: ^2.18.3
+  http: ^1.6.0
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo.png
+  web: true
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/logo_square.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+dev_dependencies:
+  flutter_native_splash: ^2.4.8
+  flutter_test:
+    sdk: flutter
